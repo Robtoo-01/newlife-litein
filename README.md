@@ -32,10 +32,13 @@ There is **no build step** — it's static files. Open `index.html` in a browser
 
 ## Design
 
-Immersive, navy-dominant layout with gold accents on a warm paper canvas, **Bricolage Grotesque**
-headlines and **Inter** body text (Google Fonts). Tasteful motion — a slow hero Ken-Burns drift,
-staggered entrance, floating elements and micro-interactions — all disabled automatically for
-visitors who prefer reduced motion.
+Aligned to the **Newlife Prayer Center & Church** parent brand (newlifeprayercenterandchurch.org):
+royal-blue / gold / red palette on white, **Cinzel** classical serif headings with **Lato** body
+text (Google Fonts), vibrant full-colour bands (royal-blue Services, red event card, deep-blue
+footer) with translucent glass cards, and gold pill badges. The copy, photography and logo mark are
+original to this site — only the visual language matches the family brand. Tasteful motion — a slow
+hero Ken-Burns drift, staggered entrance, floating elements and micro-interactions — is disabled
+automatically for visitors who prefer reduced motion.
 
 ## Editing content
 

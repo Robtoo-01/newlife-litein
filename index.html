@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>New Life Church Litein · A house of prayer in Kericho County</title>
 <meta name="description" content="New Life Prayer Center and Church, Litein — part of the Newlife family. Sunday worship 8:00 AM–12:30 PM opposite Koiwa Road junction. Holy Communion, healing and deliverance, anointing services, prayer and counselling with Pastor Rop.">
-<meta name="theme-color" content="#0b1638">
+<meta name="theme-color" content="#132039">
 <link rel="canonical" href="https://newlife-litein.pages.dev/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -23,22 +23,22 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#0b1638; --navy-2:#13204a; --navy-3:#1c2c5e;
-  --gold:#eab13a; --gold-2:#f5cd6f; --gold-deep:#8c6115;
-  --red:#e0483a;
-  --paper:#f5f1e8; --paper-2:#ebe4d5; --card:#fffdf8;
-  --ink:#15192410; /* unused guard */
-  --head:#141827; --body:#3f4656; --muted:#6c7486;
-  --on-dark:#f2f0ea; --on-dark-mut:#a7adc0;
+  --navy:#132039; --navy-2:#0e1a30; --navy-3:#24355f;
+  --blue:#1152d4; --blue-2:#082a91; --sky:#3db8f5;
+  --gold:#f9b81f; --gold-2:#ffd466; --gold-deep:#8a6306;
+  --red:#cf1717; --red-2:#a01212;
+  --paper:#ffffff; --paper-2:#eef1f6; --card:#ffffff;
+  --head:#13203a; --body:#49505f; --muted:#5b6575;
+  --on-dark:#eef1f7; --on-dark-mut:#aab4c8;
   --white:#fff;
-  --line:#e2dccd; --line-d:rgba(255,255,255,.14);
-  --ff-head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
-  --ff-body:Inter,system-ui,-apple-system,sans-serif;
+  --line:#e2e6ee; --line-d:rgba(255,255,255,.18);
+  --ff-head:"Cinzel",Georgia,"Times New Roman",serif;
+  --ff-body:"Lato",system-ui,-apple-system,"Segoe UI",sans-serif;
   --r-xs:8px; --r-sm:12px; --r:18px; --r-lg:26px; --r-pill:999px;
-  --shadow:0 18px 48px -18px rgba(11,22,56,.42);
+  --shadow:0 18px 48px -18px rgba(8,26,60,.42);
   --ease:cubic-bezier(.2,.7,.2,1);
   --wrap:1180px;
   --nav-h:72px;
@@ -47,9 +47,9 @@
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{font-family:var(--ff-body);font-size:17px;line-height:1.65;color:var(--body);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3,h4{font-family:var(--ff-head);color:var(--head);line-height:1.08;letter-spacing:-.02em;font-weight:700;font-optical-sizing:auto}
-h2{font-size:clamp(2rem,1.3rem + 2.7vw,3.15rem);font-weight:640;letter-spacing:-.022em}
-h3{font-size:clamp(1.2rem,1rem + .8vw,1.55rem);font-weight:620;letter-spacing:-.015em}
+h1,h2,h3,h4{font-family:var(--ff-head);color:var(--head);line-height:1.16;letter-spacing:.005em;font-weight:700}
+h2{font-size:clamp(1.85rem,1.2rem + 2.5vw,2.95rem);font-weight:700;letter-spacing:.012em}
+h3{font-size:clamp(1.1rem,1rem + .6vw,1.4rem);font-weight:600;letter-spacing:.01em}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
@@ -61,8 +61,7 @@ svg.i-sm{width:17px;height:17px}
 .skip:focus{top:14px}
 .progress{position:fixed;top:0;left:0;height:3px;width:100%;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,var(--gold),var(--gold-2));z-index:150}
 :focus-visible{outline:2.5px solid var(--gold);outline-offset:2px;border-radius:3px}
-.on-dark :focus-visible,.hero :focus-visible,.nav:not(.scrolled) :focus-visible{outline-color:var(--gold-2)}
-.hero .kicker{color:var(--gold-2)}
+.on-dark :focus-visible,.hero :focus-visible,.nav:not(.scrolled) :focus-visible,.on-blue :focus-visible,.on-red :focus-visible{outline-color:var(--gold-2)}
 
 /* ---------- Buttons ---------- */
 .btn{--bg:var(--gold);--fg:#1c1402;display:inline-flex;align-items:center;gap:10px;font-family:var(--ff-body);font-weight:600;font-size:.98rem;line-height:1;padding:14px 22px;border-radius:var(--r-pill);background:var(--bg);color:var(--fg);border:1.5px solid transparent;transition:transform .18s var(--ease),background .2s,border-color .2s,color .2s;white-space:nowrap}
@@ -71,10 +70,13 @@ svg.i-sm{width:17px;height:17px}
 .btn .i{width:20px;height:20px;stroke-width:2}
 .btn-gold{--bg:var(--gold);--fg:#241803}
 .btn-gold:hover{--bg:var(--gold-2)}
+.btn-blue{--bg:var(--blue);--fg:#fff}
+.btn-blue:hover{--bg:#0f46b4}
+.btn-gold:hover{--bg:var(--gold-2)}
 .btn-outline{--bg:transparent;--fg:var(--head);border-color:var(--line)}
 .btn-outline:hover{border-color:var(--head)}
-.btn-light{--bg:var(--navy);--fg:#fff}
-.btn-light:hover{--bg:var(--navy-3)}
+.btn-light{--bg:var(--blue);--fg:#fff}
+.btn-light:hover{--bg:#0f46b4}
 .btn-navy{--bg:var(--navy);--fg:#fff}
 .on-dark .btn-outline{--fg:var(--on-dark);border-color:rgba(255,255,255,.3)}
 .on-dark .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.06)}
@@ -94,20 +96,36 @@ section{position:relative}
 .on-paper{background:var(--paper);color:var(--body)}
 .on-paper-2{background:var(--paper-2);color:var(--body)}
 .on-dark{background:var(--navy);color:var(--on-dark)}
-.on-dark h1,.on-dark h2,.on-dark h3,.on-dark h4{color:#fff}
-.on-dark .muted,.on-dark p{color:var(--on-dark-mut)}
+.on-blue{background:linear-gradient(160deg,#1a5ce0,#1148bd 55%,#0e3ea6);color:var(--on-dark)}
+.on-red{background:linear-gradient(160deg,#d42020,#b31616 60%,#8f1111);color:var(--on-dark)}
+.on-dark h1,.on-dark h2,.on-dark h3,.on-dark h4,.on-blue h1,.on-blue h2,.on-blue h3,.on-blue h4,.on-red h1,.on-red h2,.on-red h3,.on-red h4{color:#fff}
+.on-dark .muted,.on-dark p,.on-blue p,.on-red p{color:var(--on-dark-mut)}
+.on-blue p,.on-red p{color:rgba(255,255,255,.86)}
 section[id]{scroll-margin-top:calc(var(--nav-h) + 8px)}
-.head{max-width:60ch;margin-bottom:clamp(30px,4vw,52px)}
+.head{max-width:62ch;margin-bottom:clamp(30px,4vw,52px)}
 .head h2{margin-bottom:14px}
-.head p{font-size:1.1rem;color:var(--muted);max-width:56ch}
-.on-dark .head p{color:var(--on-dark-mut)}
-.kicker{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:.92rem;color:var(--gold-deep);margin-bottom:16px}
-.on-dark .kicker{color:var(--gold)}
-.kicker::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--gold)}
+.head p{font-size:1.1rem;color:var(--muted);max-width:58ch}
+.on-dark .head p,.on-blue .head p,.on-red .head p{color:rgba(255,255,255,.84)}
+/* glass cards on vibrant bands */
+.on-blue .card,.on-red .card{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.22);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.on-blue .card h3,.on-red .card h3{color:#fff}
+.on-blue .card p,.on-red .card p{color:rgba(255,255,255,.82)}
+.on-blue .card .when,.on-red .card .when{border-top-color:rgba(255,255,255,.2)}
+.on-blue .card .when>div,.on-red .card .when>div{color:rgba(255,255,255,.9)}
+.on-blue .card .when strong,.on-red .card .when strong{color:#fff}
+.on-blue .card .when .i,.on-red .card .when .i{color:var(--gold-2)}
+.on-blue .card:hover,.on-red .card:hover{border-color:rgba(255,255,255,.5)}
+.on-blue .ic-box,.on-red .ic-box{background:rgba(255,255,255,.16);color:#fff}
+.on-blue .link,.on-red .link{color:var(--gold-2)}
+.on-blue .link:hover,.on-red .link:hover{color:#fff}
+/* kicker = gold pill badge */
+.kicker{display:inline-flex;align-items:center;gap:9px;font-family:var(--ff-body);font-weight:700;font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:#4a3406;background:var(--gold);padding:7px 15px;border-radius:var(--r-pill);margin-bottom:18px}
+.on-dark .kicker,.on-blue .kicker,.on-red .kicker{color:#3a2900;background:var(--gold)}
+.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:#4a3406}
 
 /* ---------- Nav ---------- */
 .nav{position:fixed;inset:0 0 auto 0;z-index:100;height:var(--nav-h);display:flex;align-items:center;color:var(--on-dark);transition:background .35s,box-shadow .35s,color .35s}
-.nav.scrolled{background:rgba(245,241,232,.92);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);color:var(--head);box-shadow:0 1px 0 var(--line),0 10px 30px -18px rgba(11,22,56,.3)}
+.nav.scrolled{background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);color:var(--head);box-shadow:0 1px 0 var(--line),0 10px 30px -18px rgba(8,26,60,.32)}
 .nav-in{display:flex;align-items:center;gap:20px;width:100%}
 .brand{display:flex;align-items:center;gap:12px;color:inherit}
 .brand svg{width:42px;height:42px;flex:none}
@@ -135,8 +153,8 @@ section[id]{scroll-margin-top:calc(var(--nav-h) + 8px)}
 .hero-bg{position:absolute;inset:0;z-index:-2;overflow:hidden;background:var(--navy)}
 .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
 .hero-scrim{position:absolute;inset:0;z-index:-1;background:
-   linear-gradient(180deg,rgba(7,13,35,.55) 0%,rgba(7,13,35,.12) 26%,rgba(7,13,35,.55) 68%,rgba(7,13,35,.94) 100%),
-   linear-gradient(90deg,rgba(7,13,35,.82) 0%,rgba(7,13,35,.35) 55%,rgba(7,13,35,.1) 100%)}
+   linear-gradient(180deg,rgba(10,22,52,.58) 0%,rgba(10,22,52,.14) 26%,rgba(9,20,50,.5) 64%,rgba(8,20,58,.95) 100%),
+   linear-gradient(95deg,rgba(8,26,72,.86) 0%,rgba(10,30,80,.4) 55%,rgba(10,30,80,.08) 100%)}
 .hero-in{padding-block:clamp(40px,7vw,92px);max-width:860px}
 .hero h1{color:#fff;font-weight:680;font-size:clamp(2.6rem,1.5rem + 4.9vw,5.1rem);line-height:1.0;letter-spacing:-.03em;max-width:17ch;text-wrap:balance}
 .hero .lead{margin-top:22px;font-size:clamp(1.08rem,1rem + .5vw,1.3rem);color:#e7e6df;max-width:48ch;line-height:1.55}
@@ -158,7 +176,7 @@ section[id]{scroll-margin-top:calc(var(--nav-h) + 8px)}
 .fact a{color:var(--navy);font-weight:600}
 
 /* ---------- Upcoming event (dynamic, navy on paper) ---------- */
-.upcoming{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);background:var(--navy);color:var(--on-dark);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow)}
+.upcoming{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);background:linear-gradient(135deg,#d42020,#a81414);color:var(--on-dark);border-radius:var(--r-lg);overflow:hidden;box-shadow:0 22px 50px -20px rgba(176,22,22,.5)}
 .upcoming .art{position:relative;min-height:260px}
 .upcoming .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .upcoming .art::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(11,22,56,.55))}
@@ -327,7 +345,7 @@ input:disabled{opacity:.5}
 .soc .i{color:var(--gold-deep);width:19px;height:19px}
 
 /* ---------- Footer ---------- */
-.foot{background:#070d23;color:var(--on-dark-mut);padding-block:clamp(48px,6vw,72px) 32px}
+.foot{background:var(--blue-2);color:var(--on-dark-mut);padding-block:clamp(48px,6vw,72px) 32px}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:36px}
 .foot .brand b{color:#fff}
 .foot .brand small{color:var(--on-dark-mut)}
@@ -487,7 +505,7 @@ html:not(.js) [data-reveal]{opacity:1;transform:none}
 <header class="nav" id="nav">
   <div class="wrap nav-in">
     <a class="brand" href="#top" aria-label="New Life Church Litein — home">
-      <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5" fill="#0b1638" stroke="#eab13a" stroke-width="1.4"/><path d="M8.5 27c4-3 9-4.6 13.5-4.6s9.5 1.6 13.5 4.6" fill="none" stroke="#eab13a" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M22 11v23M15.5 18h13" stroke="#eab13a" stroke-width="3" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5" fill="#132039" stroke="#f9b81f" stroke-width="1.4"/><path d="M8.5 27c4-3 9-4.6 13.5-4.6s9.5 1.6 13.5 4.6" fill="none" stroke="#eab13a" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M22 11v23M15.5 18h13" stroke="#eab13a" stroke-width="3" stroke-linecap="round"/></svg>
       <span><b>New Life Church</b><small>Prayer Center · Litein</small></span>
     </a>
     <nav aria-label="Main">
@@ -570,7 +588,7 @@ html:not(.js) [data-reveal]{opacity:1;transform:none}
 </section>
 
 <!-- SERVICES -->
-<section class="band on-paper" id="services" aria-labelledby="services-title">
+<section class="band on-blue" id="services" aria-labelledby="services-title">
   <div class="wrap">
     <div class="head" data-reveal>
       <p class="kicker">Services</p>
@@ -775,7 +793,7 @@ html:not(.js) [data-reveal]{opacity:1;transform:none}
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="#top"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5" fill="#13204a" stroke="#eab13a" stroke-width="1.4"/><path d="M8.5 27c4-3 9-4.6 13.5-4.6s9.5 1.6 13.5 4.6" fill="none" stroke="#eab13a" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M22 11v23M15.5 18h13" stroke="#eab13a" stroke-width="3" stroke-linecap="round"/></svg><span><b>New Life Church</b><small>Prayer Center · Litein</small></span></a>
+        <a class="brand" href="#top"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5" fill="#0e1a30" stroke="#f9b81f" stroke-width="1.4"/><path d="M8.5 27c4-3 9-4.6 13.5-4.6s9.5 1.6 13.5 4.6" fill="none" stroke="#f9b81f" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M22 11v23M15.5 18h13" stroke="#eab13a" stroke-width="3" stroke-linecap="round"/></svg><span><b>New Life Church</b><small>Prayer Center · Litein</small></span></a>
         <p style="margin-top:16px;max-width:34ch">Raising disciples · Transforming lives · Impacting our world. Part of Newlife Prayer Center &amp; Church.</p>
       </div>
       <div><h4>Explore</h4><ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#visit">Your first visit</a></li><li><a href="#faq">FAQ</a></li></ul></div>

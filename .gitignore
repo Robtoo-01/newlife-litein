@@ -1,0 +1,15 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Logs / env / secrets
+*.log
+.env
+.env.*
+
+# Dependencies (not used by this static site)
+node_modules/
