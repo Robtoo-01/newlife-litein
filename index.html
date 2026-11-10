@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>New Life Church Litein · A house of prayer in Kericho County</title>
 <meta name="description" content="New Life Prayer Center and Church, Litein — part of the Newlife family. Sunday worship 8:00 AM–12:30 PM opposite Koiwa Road junction. Holy Communion, healing and deliverance, anointing services, prayer and counselling with Pastor Rop.">
-<meta name="theme-color" content="#132039">
+<meta name="theme-color" content="#0f1d3a">
 <link rel="canonical" href="https://newlife-litein.pages.dev/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -23,438 +23,350 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#132039; --navy-2:#0e1a30; --navy-3:#24355f;
-  --blue:#1152d4; --blue-2:#082a91; --sky:#3db8f5;
-  --gold:#f9b81f; --gold-2:#ffd466; --gold-deep:#8a6306;
-  --red:#cf1717; --red-2:#a01212;
-  --paper:#ffffff; --paper-2:#eef1f6; --card:#ffffff;
-  --head:#13203a; --body:#49505f; --muted:#5b6575;
-  --on-dark:#eef1f7; --on-dark-mut:#aab4c8;
-  --white:#fff;
-  --line:#e2e6ee; --line-d:rgba(255,255,255,.18);
-  --ff-head:"Cinzel",Georgia,"Times New Roman",serif;
-  --ff-body:"Lato",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --r-xs:8px; --r-sm:12px; --r:18px; --r-lg:26px; --r-pill:999px;
-  --shadow:0 18px 48px -18px rgba(8,26,60,.42);
-  --ease:cubic-bezier(.2,.7,.2,1);
-  --wrap:1180px;
-  --nav-h:72px;
+  --bg:#fcfaf5; --surface:#faf8f3; --card:#ffffff;
+  --ink:#0f1d3a; --body:#3d4459; --muted:#6a7187;
+  --gold:#d4a947; --gold-hi:#e8c46a; --gold-soft:#f8f0dc; --gold-edge:#efdfb4; --gold-deep:#8a6306;
+  --indigo:#3b1fd1; --lav:#9494bf; --slate:#515677; --night:#1e253d;
+  --line:#e7e4da; --line-d:rgba(255,255,255,.14);
+  --ff:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:20px; --r-sm:14px; --r-lg:28px; --r-pill:999px;
+  --wrap:1120px; --nav-h:64px; --tabs-h:70px;
+  --shadow:0 26px 50px -24px rgba(15,29,58,.42);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{font-family:var(--ff-body);font-size:17px;line-height:1.65;color:var(--body);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3,h4{font-family:var(--ff-head);color:var(--head);line-height:1.16;letter-spacing:.005em;font-weight:700}
-h2{font-size:clamp(1.85rem,1.2rem + 2.5vw,2.95rem);font-weight:700;letter-spacing:.012em}
-h3{font-size:clamp(1.1rem,1rem + .6vw,1.4rem);font-weight:600;letter-spacing:.01em}
+body{font-family:var(--ff);font-size:16px;line-height:1.6;color:var(--body);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:var(--tabs-h)}
+@media (min-width:861px){body{padding-bottom:0}}
+h1,h2,h3{color:var(--ink);font-weight:800;letter-spacing:-.02em;line-height:1.12}
+h1{font-size:clamp(2.2rem,1.5rem + 3.2vw,3.9rem)}
+h2{font-size:clamp(1.6rem,1.15rem + 1.5vw,2.3rem)}
+h3{font-size:1.12rem;font-weight:700;letter-spacing:-.01em}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
-svg.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
-svg.i-sm{width:17px;height:17px}
-.i-arrow{width:19px;height:19px}
-.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(18px,4vw,36px)}
-.skip{position:fixed;left:14px;top:-60px;z-index:200;background:var(--navy);color:#fff;padding:12px 18px;border-radius:var(--r-sm);transition:top .2s}
+.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.i-sm{width:16px;height:16px}
+.skip{position:fixed;left:14px;top:-60px;z-index:200;background:var(--ink);color:#fff;padding:12px 18px;border-radius:var(--r-sm);transition:top .2s}
 .skip:focus{top:14px}
-.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,var(--gold),var(--gold-2));z-index:150}
-:focus-visible{outline:2.5px solid var(--gold);outline-offset:2px;border-radius:3px}
-.on-dark :focus-visible,.hero :focus-visible,.nav:not(.scrolled) :focus-visible,.on-blue :focus-visible,.on-red :focus-visible{outline-color:var(--gold-2)}
+:focus-visible{outline:2.5px solid var(--gold);outline-offset:2px;border-radius:6px}
+.on-night :focus-visible,.hero :focus-visible,.on-navy :focus-visible{outline-color:var(--gold-hi)}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:20px}
+@media (min-width:860px){.wrap{padding-inline:40px}}
+section{position:relative}
+section[id]{scroll-margin-top:calc(var(--nav-h) + 8px)}
+.band{padding-block:60px}
+@media (min-width:860px){.band{padding-block:100px}}
+.kicker{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:12px}
+.on-night .kicker,.on-navy .kicker{color:var(--gold-hi)}
+.head{margin-bottom:30px;max-width:640px}
+.head p{margin-top:12px;color:var(--muted);font-size:1.02rem}
+.on-night{background:var(--night);color:#c4cadb}
+.on-night h2,.on-night h3{color:#fff}
+.on-night p{color:#c4cadb}
 
 /* ---------- Buttons ---------- */
-.btn{--bg:var(--gold);--fg:#1c1402;display:inline-flex;align-items:center;gap:10px;font-family:var(--ff-body);font-weight:600;font-size:.98rem;line-height:1;padding:14px 22px;border-radius:var(--r-pill);background:var(--bg);color:var(--fg);border:1.5px solid transparent;transition:transform .18s var(--ease),background .2s,border-color .2s,color .2s;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:.97rem;line-height:1;padding:16px 22px;border-radius:var(--r-pill);border:1.5px solid transparent;transition:transform .18s,background .2s,border-color .2s,color .2s;white-space:nowrap}
 .btn:hover{transform:translateY(-2px)}
-.btn:active{transform:translateY(0)}
-.btn .i{width:20px;height:20px;stroke-width:2}
-.btn-gold{--bg:var(--gold);--fg:#241803}
-.btn-gold:hover{--bg:var(--gold-2)}
-.btn-blue{--bg:var(--blue);--fg:#fff}
-.btn-blue:hover{--bg:#0f46b4}
-.btn-gold:hover{--bg:var(--gold-2)}
-.btn-outline{--bg:transparent;--fg:var(--head);border-color:var(--line)}
-.btn-outline:hover{border-color:var(--head)}
-.btn-light{--bg:var(--blue);--fg:#fff}
-.btn-light:hover{--bg:#0f46b4}
-.btn-navy{--bg:var(--navy);--fg:#fff}
-.on-dark .btn-outline{--fg:var(--on-dark);border-color:rgba(255,255,255,.3)}
-.on-dark .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.06)}
-.link{display:inline-flex;align-items:center;gap:7px;font-weight:600;color:var(--gold-deep)}
-.link:hover{color:var(--head)}
-.on-dark .link{color:var(--gold)}
-.on-dark .link:hover{color:#fff}
+.btn .i{width:18px;height:18px}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-hi)}
+.btn-navy{background:var(--ink);color:#fff}
+.btn-navy:hover{background:#1b2c52}
+.btn-outline{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-outline:hover{background:var(--ink);color:#fff}
+.btn-glass{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.4);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.btn-glass:hover{background:rgba(255,255,255,.2)}
+.btn-block{display:flex;width:100%}
+.btn-sm{padding:12px 16px;font-size:.88rem}
+.link{display:inline-flex;align-items:center;gap:7px;font-weight:700;color:var(--gold-deep)}
+.link:hover{color:var(--ink)}
 
 /* ---------- Icon chips ---------- */
-.ic-box{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:rgba(234,177,58,.16);color:var(--gold-deep)}
-.ic-box.navy{background:var(--navy);color:var(--gold)}
-.on-dark .ic-box{background:rgba(234,177,58,.16);color:var(--gold)}
+.ic{flex:none;width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:var(--ink);color:var(--gold)}
+.ic.gold{background:var(--gold-soft);color:var(--gold-deep)}
+.ic.glass{background:rgba(255,255,255,.14);color:var(--gold-hi)}
+.ic.lg{width:50px;height:50px;border-radius:16px}
 
-/* ---------- Sections / surfaces ---------- */
-section{position:relative}
-.band{padding-block:clamp(60px,8vw,104px)}
-.on-paper{background:var(--paper);color:var(--body)}
-.on-paper-2{background:var(--paper-2);color:var(--body)}
-.on-dark{background:var(--navy);color:var(--on-dark)}
-.on-blue{background:linear-gradient(160deg,#1a5ce0,#1148bd 55%,#0e3ea6);color:var(--on-dark)}
-.on-red{background:linear-gradient(160deg,#d42020,#b31616 60%,#8f1111);color:var(--on-dark)}
-.on-dark h1,.on-dark h2,.on-dark h3,.on-dark h4,.on-blue h1,.on-blue h2,.on-blue h3,.on-blue h4,.on-red h1,.on-red h2,.on-red h3,.on-red h4{color:#fff}
-.on-dark .muted,.on-dark p,.on-blue p,.on-red p{color:var(--on-dark-mut)}
-.on-blue p,.on-red p{color:rgba(255,255,255,.86)}
-section[id]{scroll-margin-top:calc(var(--nav-h) + 8px)}
-.head{max-width:62ch;margin-bottom:clamp(30px,4vw,52px)}
-.head h2{margin-bottom:14px}
-.head p{font-size:1.1rem;color:var(--muted);max-width:58ch}
-.on-dark .head p,.on-blue .head p,.on-red .head p{color:rgba(255,255,255,.84)}
-/* glass cards on vibrant bands */
-.on-blue .card,.on-red .card{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.22);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
-.on-blue .card h3,.on-red .card h3{color:#fff}
-.on-blue .card p,.on-red .card p{color:rgba(255,255,255,.82)}
-.on-blue .card .when,.on-red .card .when{border-top-color:rgba(255,255,255,.2)}
-.on-blue .card .when>div,.on-red .card .when>div{color:rgba(255,255,255,.9)}
-.on-blue .card .when strong,.on-red .card .when strong{color:#fff}
-.on-blue .card .when .i,.on-red .card .when .i{color:var(--gold-2)}
-.on-blue .card:hover,.on-red .card:hover{border-color:rgba(255,255,255,.5)}
-.on-blue .ic-box,.on-red .ic-box{background:rgba(255,255,255,.16);color:#fff}
-.on-blue .link,.on-red .link{color:var(--gold-2)}
-.on-blue .link:hover,.on-red .link:hover{color:#fff}
-/* kicker = gold pill badge */
-.kicker{display:inline-flex;align-items:center;gap:9px;font-family:var(--ff-body);font-weight:700;font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:#4a3406;background:var(--gold);padding:7px 15px;border-radius:var(--r-pill);margin-bottom:18px}
-.on-dark .kicker,.on-blue .kicker,.on-red .kicker{color:#3a2900;background:var(--gold)}
-.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:#4a3406}
+/* ---------- Pills & kickers ---------- */
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:.74rem;font-weight:700;background:var(--gold-soft);color:var(--gold-deep);padding:6px 12px;border-radius:var(--r-pill);border:1px solid var(--gold-edge);white-space:nowrap}
+.pill-dot{display:inline-flex;align-items:center;gap:9px;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-hi);background:rgba(15,29,58,.42);border:1px solid rgba(255,255,255,.2);padding:8px 14px;border-radius:var(--r-pill);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.pill-dot::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
 
 /* ---------- Nav ---------- */
-.nav{position:fixed;inset:0 0 auto 0;z-index:100;height:var(--nav-h);display:flex;align-items:center;color:var(--on-dark);transition:background .35s,box-shadow .35s,color .35s}
-.nav.scrolled{background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);color:var(--head);box-shadow:0 1px 0 var(--line),0 10px 30px -18px rgba(8,26,60,.32)}
-.nav-in{display:flex;align-items:center;gap:20px;width:100%}
-.brand{display:flex;align-items:center;gap:12px;color:inherit}
-.brand svg{width:42px;height:42px;flex:none}
-.brand b{display:block;font-family:var(--ff-head);font-weight:680;font-size:1.14rem;letter-spacing:-.02em;line-height:1.05}
-.brand small{display:block;font-size:.72rem;letter-spacing:.04em;opacity:.7;font-weight:500;text-transform:uppercase}
-.menu{display:flex;gap:4px;list-style:none;margin-left:auto}
-.menu a{display:block;padding:9px 14px;border-radius:var(--r-pill);font-weight:500;font-size:.95rem;color:inherit;opacity:.85;transition:opacity .2s,background .2s}
-.menu a:hover{opacity:1;background:rgba(127,127,127,.1)}
-.menu a[aria-current="true"]{opacity:1;color:var(--gold)}
-.nav.scrolled .menu a[aria-current="true"]{color:var(--gold-deep)}
-.nav-cta{padding:11px 18px;font-size:.92rem}
-.burger{display:none;width:44px;height:44px;place-items:center;border-radius:12px;color:inherit}
-.menu{align-items:center}
-
-/* ---------- Drawer ---------- */
-.drawer{position:fixed;inset:0;z-index:99;background:var(--navy);color:var(--on-dark);padding:calc(var(--nav-h) + 16px) 22px 40px;display:flex;flex-direction:column;gap:6px;transform:translateY(-100%);visibility:hidden;transition:transform .4s var(--ease),visibility .4s}
-.drawer.open{transform:none;visibility:visible}
-.drawer a:not(.btn){display:flex;align-items:center;justify-content:space-between;padding:16px 6px;font-family:var(--ff-head);font-weight:600;font-size:1.3rem;color:#fff;border-bottom:1px solid var(--line-d)}
-.drawer a:not(.btn) .i{color:var(--gold)}
-.drawer .btn{margin-top:14px;justify-content:center}
-.drawer .btn-outline{--fg:#fff;border-color:rgba(255,255,255,.3)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;color:#fff;transition:background .3s,box-shadow .3s,color .3s}
+.nav.scrolled{background:rgba(252,250,245,.94);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav-in{display:flex;align-items:center;gap:14px;width:100%}
+.brand{display:flex;align-items:center;gap:11px;color:inherit}
+.brand svg{width:40px;height:40px;flex:none}
+.brand b{display:block;font-size:.98rem;font-weight:800;line-height:1.1;letter-spacing:-.01em}
+.brand small{display:block;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;opacity:.75;font-weight:700}
+.menu{display:none;list-style:none;margin-left:auto;align-items:center;gap:2px}
+.menu a{display:block;padding:9px 13px;border-radius:var(--r-pill);font-weight:600;font-size:.92rem;opacity:.85}
+.menu a:hover{opacity:1;background:rgba(127,127,127,.12)}
+.menu a[aria-current="true"]{opacity:1;color:var(--gold-deep)}
+@media (min-width:860px){.menu{display:flex}}
+.nav-visit{margin-left:auto;padding:10px 18px;font-size:.88rem}
+@media (min-width:860px){.nav-visit{margin-left:0}}
+.burger{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:rgba(255,255,255,.14)}
+.nav.scrolled .burger{background:var(--gold-soft);color:var(--ink)}
+@media (min-width:860px){.burger{display:none}}
+.drawer{position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;z-index:99;background:var(--ink);color:#fff;padding:14px 22px 40px;display:flex;flex-direction:column;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s;overflow:auto}
+.drawer.open{opacity:1;transform:none;visibility:visible}
+.drawer a:not(.btn){display:flex;justify-content:space-between;align-items:center;padding:16px 4px;font-size:1.1rem;font-weight:700;border-bottom:1px solid var(--line-d)}
+.drawer .btn{margin-top:18px}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;color:var(--on-dark);isolation:isolate;padding-top:var(--nav-h)}
-.hero-bg{position:absolute;inset:0;z-index:-2;overflow:hidden;background:var(--navy)}
+.hero{position:relative;isolation:isolate;color:#fff;min-height:620px;display:flex;align-items:flex-end;padding:calc(var(--nav-h) + 56px) 0 150px}
+@media (min-width:860px){.hero{min-height:700px}}
+.hero-bg{position:absolute;inset:0;z-index:-2;overflow:hidden;background:var(--night)}
 .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
-.hero-scrim{position:absolute;inset:0;z-index:-1;background:
-   linear-gradient(180deg,rgba(10,22,52,.58) 0%,rgba(10,22,52,.14) 26%,rgba(9,20,50,.5) 64%,rgba(8,20,58,.95) 100%),
-   linear-gradient(95deg,rgba(8,26,72,.86) 0%,rgba(10,30,80,.4) 55%,rgba(10,30,80,.08) 100%)}
-.hero-in{padding-block:clamp(40px,7vw,92px);max-width:860px}
-.hero h1{color:#fff;font-weight:680;font-size:clamp(2.6rem,1.5rem + 4.9vw,5.1rem);line-height:1.0;letter-spacing:-.03em;max-width:17ch;text-wrap:balance}
-.hero .lead{margin-top:22px;font-size:clamp(1.08rem,1rem + .5vw,1.3rem);color:#e7e6df;max-width:48ch;line-height:1.55}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero .btn-outline{--fg:#fff;border-color:rgba(255,255,255,.55);background:rgba(10,16,38,.28);backdrop-filter:blur(2px)}
-.hero .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.12)}
-.hero-facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;font-size:.98rem;color:#e2e1da}
-.hero-facts span{display:inline-flex;align-items:center;gap:9px}
-.hero-facts .i{color:var(--gold);width:20px;height:20px}
-.hero-chip{position:absolute;right:clamp(18px,4vw,40px);top:calc(var(--nav-h) + 22px);display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;padding:11px 16px;border-radius:var(--r-pill);font-size:.9rem;box-shadow:var(--shadow)}
-.hero-chip .i{color:var(--gold)}
-.hero-chip b{display:block;font-family:var(--ff-head);font-weight:600}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(144,144,185,.62) 0%,rgba(81,86,119,.78) 38%,rgba(30,37,61,.94) 74%,#1e253d 100%)}
+.hero h1{color:#fff;max-width:15ch;margin:20px 0 16px}
+.hero h1 .gold{color:var(--gold)}
+.hero .lead{color:#e8e7f0;font-size:1.04rem;max-width:44ch}
+.hero-cta{display:grid;gap:12px;margin-top:28px;max-width:440px}
 
-/* ---------- Facts row ---------- */
-.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:clamp(36px,5vw,56px)}
-.fact{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px}
-.fact b{display:block;font-family:var(--ff-head);font-weight:620;color:var(--head);font-size:1.02rem;margin-bottom:3px}
-.fact span{font-size:.92rem;color:var(--muted);line-height:1.45}
-.fact a{color:var(--navy);font-weight:600}
+/* hero card */
+.hero-card{position:relative;z-index:2;margin:-108px auto 0;max-width:460px;background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:24px;color:var(--body)}
+.hc-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.hc-head h3{font-size:1.1rem}
+.hc-list{list-style:none;display:flex;flex-direction:column;gap:16px;margin:20px 0}
+.hc-list li{display:flex;gap:14px;align-items:flex-start}
+.hc-list b{display:block;color:var(--ink);font-size:.95rem;line-height:1.35}
+.hc-list div>span{display:block;font-size:.84rem;color:var(--muted);line-height:1.45}
+.hc-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 
-/* ---------- Upcoming event (dynamic, navy on paper) ---------- */
-.upcoming{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);background:linear-gradient(135deg,#d42020,#a81414);color:var(--on-dark);border-radius:var(--r-lg);overflow:hidden;box-shadow:0 22px 50px -20px rgba(176,22,22,.5)}
-.upcoming .art{position:relative;min-height:260px}
-.upcoming .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.upcoming .art::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(11,22,56,.55))}
-.upcoming .tagline{position:absolute;left:18px;top:18px;z-index:2;display:inline-flex;align-items:center;gap:8px;background:rgba(11,22,56,.72);backdrop-filter:blur(4px);color:#fff;padding:8px 14px;border-radius:var(--r-pill);font-size:.82rem;font-weight:600}
-.live-dot{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 0 0 rgba(224,72,58,.6);animation:pulse 1.8s infinite}
-@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(224,72,58,0)}100%{box-shadow:0 0 0 0 rgba(224,72,58,0)}}
-@media (prefers-reduced-motion:reduce){.live-dot{animation:none}}
-.upcoming .body{padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;gap:14px;justify-content:center}
-.upcoming h3{color:#fff;font-size:clamp(1.4rem,1.1rem + 1.2vw,2rem)}
-.upcoming p{color:var(--on-dark-mut)}
-.upcoming .meta{list-style:none;display:flex;flex-direction:column;gap:9px}
-.upcoming .meta li{display:flex;align-items:center;gap:11px;color:#e4e3dc;font-size:.96rem}
-.upcoming .meta .i{color:var(--gold);width:19px;height:19px}
+/* ---------- Who we are ---------- */
+.values{list-style:none;display:grid;gap:12px;margin-top:28px}
+.value{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r-sm);padding:16px 18px}
+.value b{display:block;color:var(--ink);font-weight:700;font-size:.98rem;line-height:1.3}
+.value div>span{display:block;font-size:.9rem;color:var(--muted);line-height:1.45}
 
-/* ---------- Scripture act (dark, scroll-driven) ---------- */
-.act{position:relative;height:300vh;background:var(--navy)}
-.act .stage{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;place-items:center}
-.act .photo{position:absolute;inset:0}
-.act .photo img{width:100%;height:100%;object-fit:cover;transform:scale(calc(1.06 + var(--sc-p,0)*.14));opacity:.42}
-.act .scrim{position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 40%,rgba(11,22,56,.35),rgba(8,14,36,.9))}
-.act .lines{position:relative;z-index:2;text-align:center;padding:24px;max-width:1000px}
-.act .line{display:block;font-family:var(--ff-head);font-weight:680;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,1.2rem + 5.4vw,5.6rem);color:#fff;opacity:var(--o,0);transform:translateY(calc((1 - var(--o,0)) * 18px))}
-.act .line:nth-child(2){color:var(--gold)}
-.act .verse{display:block;margin-top:28px;font-family:var(--ff-body);font-weight:400;font-size:clamp(1rem,.9rem + .6vw,1.3rem);color:#dcdbd3;opacity:var(--o4,0);max-width:40ch;margin-inline:auto;line-height:1.5}
-html:not(.js) .act .line,html:not(.js) .act .verse{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){
-  .act{height:auto}
-  .act .stage{position:static;height:auto;min-height:72vh;padding-block:12vh}
-  .act .photo img{transform:none}
-  .act .line,.act .verse{opacity:1;transform:none}
+/* ---------- This Sunday ---------- */
+.upcard{position:relative;max-width:520px;margin-inline:auto;border-radius:var(--r-lg);overflow:hidden;color:#fff;background:linear-gradient(180deg,#e7e4f8 0%,#a4a4cf 26%,#3d4670 56%,#0f1d3a 100%);box-shadow:var(--shadow)}
+.upcard .art{position:relative;height:250px;display:grid;place-items:end center;padding-bottom:0}
+.upcard .art .frame{width:150px;height:150px;border-radius:26px;overflow:hidden;margin-bottom:-6px;border:3px solid rgba(255,255,255,.7);box-shadow:0 18px 30px -12px rgba(15,29,58,.55)}
+.upcard .art img{width:100%;height:100%;object-fit:cover}
+.upcard .tag{position:absolute;left:18px;top:18px;z-index:2;display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--ink);padding:8px 14px;border-radius:var(--r-pill);font-size:.8rem;font-weight:700}
+.upcard .tag .i{width:15px;height:15px;color:var(--gold-deep)}
+.upcard .tag .live-dot{width:9px;height:9px;border-radius:50%;background:#d42a2a;box-shadow:0 0 0 0 rgba(212,42,42,.6);animation:pulse 1.8s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(212,42,42,0)}100%{box-shadow:0 0 0 0 rgba(212,42,42,0)}}
+@media (prefers-reduced-motion:reduce){.upcard .tag .live-dot{animation:none}}
+.upcard .body{padding:6px 26px 28px;display:flex;flex-direction:column;gap:14px}
+.upcard h3{color:#fff;font-size:1.45rem}
+.upcard p{color:#d7dbea;font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);border-radius:var(--r-pill);padding:7px 12px;font-size:.82rem;color:#fff;font-weight:600}
+.chip .i{width:15px;height:15px;color:var(--gold-hi)}
+.upcard .meta{list-style:none;display:flex;flex-direction:column;gap:8px}
+.upcard .meta li{display:flex;gap:10px;align-items:center;color:#e6e9f3;font-size:.94rem}
+.upcard .meta .i{color:var(--gold-hi);width:18px;height:18px}
+.upcard .acts{display:flex;flex-wrap:wrap;gap:10px}
+
+/* glance rows */
+.glance-title{font-size:1.4rem;margin:44px 0 16px;text-align:left}
+.rows{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;max-width:620px;margin-inline:auto}
+.row{display:flex;align-items:center;gap:14px;padding:18px 20px;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row>div{flex:1;min-width:0}
+.row b{display:block;color:var(--ink);font-size:.98rem;line-height:1.3}
+.row div>span{display:block;color:var(--muted);font-size:.88rem;line-height:1.45}
+.row a.num{color:var(--ink);font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.row .side{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--surface);color:var(--ink);flex:none}
+.row .side:hover{background:var(--gold-soft)}
+
+/* ---------- Services rail ---------- */
+.swipe{display:inline-flex;align-items:center;gap:5px;font-size:.84rem;font-weight:700;color:var(--muted)}
+@media (min-width:860px){.swipe{display:none}}
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:20px;padding:4px 20px 18px;margin:0 -20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.svc{flex:0 0 min(80%,300px);scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px;transition:transform .25s,border-color .25s}
+.svc:hover{transform:translateY(-3px);border-color:var(--gold)}
+.svc p{font-size:.9rem;color:var(--muted);line-height:1.5}
+.svc .when{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:7px;font-size:.84rem}
+.svc .when div{display:flex;gap:8px;align-items:flex-start;color:var(--body)}
+.svc .when .i{width:15px;height:15px;color:var(--gold-deep);margin-top:2px}
+.svc .when strong{color:var(--ink);font-weight:700}
+.svc .link{font-size:.9rem;margin-top:2px}
+@media (min-width:860px){
+  .rail{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible;margin:0;padding:0}
+  .svc{flex:initial}
 }
 
-/* ---------- Service cards (light) ---------- */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{display:flex;flex-direction:column;gap:14px;padding:30px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);transition:transform .25s var(--ease),border-color .25s}
-.card:hover{transform:translateY(-4px);border-color:var(--gold)}
-.card h3{color:var(--head)}
-.card p{color:var(--muted);font-size:.98rem;flex:1}
-.card .when{display:flex;flex-direction:column;gap:8px;padding-top:16px;border-top:1px solid var(--line)}
-.card .when>div{display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--body)}
-.card .when .i{color:var(--gold-deep);width:18px;height:18px}
-.card .when strong{font-weight:600;color:var(--head)}
-.card .link{margin-top:4px}
+/* ---------- Pastor ---------- */
+.pastor{max-width:660px;margin-inline:auto;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px}
+.pastor-top{display:flex;gap:16px;align-items:center}
+.pastor-top figure{width:96px;height:96px;border-radius:24px;overflow:hidden;flex:none;box-shadow:0 14px 26px -16px rgba(15,29,58,.5)}
+.pastor-top img{width:100%;height:100%;object-fit:cover}
+.pastor-top .kicker{font-size:.66rem;margin-bottom:6px}
+.pastor-top h3{font-size:1.4rem}
+.pastor-top .role{display:block;font-size:.88rem;color:var(--muted)}
+.pastor p.pastor-copy{margin-top:20px;color:var(--body)}
+.verse{margin:20px 0 22px;background:var(--gold-soft);border-left:3px solid var(--gold);border-radius:var(--r-sm);padding:16px 18px;color:var(--ink);font-weight:700;font-size:1.02rem;line-height:1.45}
+.verse cite{display:block;font-style:normal;font-size:.8rem;color:var(--gold-deep);margin-top:6px;font-weight:700;letter-spacing:.02em}
 
-/* ---------- About (dark) ---------- */
-.about{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(30px,5vw,64px);align-items:center}
-.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:14px}
-.mosaic figure{border-radius:var(--r);overflow:hidden;border:1px solid var(--line-d)}
-.mosaic img{width:100%;height:100%;object-fit:cover}
-.mosaic .m1{grid-row:span 2;aspect-ratio:3/4}
-.mosaic .m2{aspect-ratio:1}
-.mosaic .m3{aspect-ratio:1}
-.about h2{margin-bottom:18px}
-.about>div>p{margin-bottom:16px;max-width:52ch}
-.values{list-style:none;display:flex;flex-direction:column;gap:16px;margin:24px 0 28px}
-.values li{display:flex;gap:14px;align-items:flex-start}
-.values b{display:block;font-family:var(--ff-head);font-weight:600;color:#fff;margin-bottom:2px}
-.values span{color:var(--on-dark-mut);font-size:.96rem}
-.pastor{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,48px);align-items:center;margin-top:clamp(48px,6vw,80px);background:var(--navy-2);border:1px solid var(--line-d);border-radius:var(--r-lg);overflow:hidden}
-.pastor figure{height:100%;min-height:340px}
-.pastor img{width:100%;height:100%;object-fit:cover}
-.pastor .txt{padding:clamp(28px,3.5vw,48px) clamp(28px,3.5vw,48px) clamp(28px,3.5vw,48px) 0}
-.pastor .role{display:block;color:var(--gold);font-weight:600;margin:4px 0 16px}
-.pastor p{color:var(--on-dark-mut);margin-bottom:14px;max-width:52ch}
-.verse{font-family:var(--ff-head);font-weight:500;font-style:italic;font-size:1.15rem;color:#fff;border-left:3px solid var(--gold);padding-left:18px;margin:20px 0 24px;line-height:1.4}
-.verse cite{display:block;font-style:normal;font-family:var(--ff-body);font-size:.85rem;font-weight:600;color:var(--gold);margin-top:8px;letter-spacing:.02em}
-.family{display:flex;flex-wrap:wrap;align-items:center;gap:18px;justify-content:space-between;margin-top:clamp(32px,4vw,52px);padding:24px clamp(22px,3vw,36px);background:var(--navy-2);border:1px solid var(--line-d);border-radius:var(--r)}
-.family .row{display:flex;align-items:center;gap:16px}
-.family b{color:#fff;font-family:var(--ff-head);font-weight:600}
+/* ---------- Testimonies (night) ---------- */
+.quotes{display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:860px){.quotes{grid-template-columns:repeat(3,1fr)}}
+.quote{position:relative;background:rgba(255,255,255,.05);border:1px solid var(--line-d);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:16px}
+.quote .sample{position:absolute;right:14px;top:14px;font-size:.64rem;font-weight:700;color:#c4cadb;background:rgba(255,255,255,.08);padding:4px 9px;border-radius:var(--r-pill)}
+.quote .qi{width:30px;height:30px;color:var(--gold)}
+.quote blockquote p{color:#eceef5;font-size:.98rem;line-height:1.6}
+.quote figcaption footer{display:flex;align-items:center;gap:12px;font-size:.88rem;color:#c4cadb}
+.quote .avatar{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--gold);color:var(--ink);font-weight:800}
+.quote b{display:block;color:#fff;font-weight:700}
+.fine{margin-top:24px;font-size:.82rem;color:#aab2c6;max-width:70ch}
 
-/* ---------- Steps (light) ---------- */
-.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step}
-.step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;display:flex;flex-direction:column;gap:12px}
-.step .num{font-family:var(--ff-head);font-weight:700;font-size:1.05rem;color:var(--gold-deep);letter-spacing:.02em}
-.step h3{font-size:1.15rem}
-.step p{color:var(--muted);font-size:.94rem}
-.step .ic-box{width:42px;height:42px}
-
-/* ---------- Testimonies (dark) ---------- */
-.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.quote{position:relative;background:var(--navy-2);border:1px solid var(--line-d);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:16px}
-.quote .sample{position:absolute;right:14px;top:14px;font-size:.66rem;font-weight:600;letter-spacing:.03em;color:var(--on-dark-mut);background:rgba(255,255,255,.07);padding:4px 9px;border-radius:var(--r-pill)}
-.quote .qi{width:34px;height:34px;color:var(--gold);opacity:.9}
-.quote blockquote p{color:#ecebe4;font-size:1.02rem;line-height:1.55}
-.quote figcaption footer{display:flex;align-items:center;gap:13px;font-size:.9rem;color:var(--on-dark-mut)}
-.quote .avatar{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--gold);color:var(--navy);font-family:var(--ff-head);font-weight:700}
-.quote b{display:block;color:#fff;font-weight:600}
-.fine{margin-top:26px;font-size:.84rem;color:var(--on-dark-mut);max-width:70ch}
-
-/* ---------- Watch & give (light) ---------- */
-.duo{display:grid;grid-template-columns:1.25fr .9fr;gap:20px;align-items:start}
-.watch{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column}
-.video{position:relative;aspect-ratio:16/9;background:var(--navy);overflow:hidden;flex:none}
-.video img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
-.video button{position:absolute;inset:0;width:100%;height:100%;display:grid;place-items:center}
-.video .play{display:grid;place-items:center;width:74px;height:74px;border-radius:50%;background:var(--gold);color:var(--navy);box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .2s}
-.video .play .i{width:30px;height:30px;stroke-width:2.2;margin-left:3px}
-.video button:hover .play{transform:scale(1.08)}
-.video iframe{width:100%;height:100%;border:0;display:block}
-.watch .body{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 28px}
-.watch .body h3{color:var(--head)}
-.watch .body p{color:var(--muted);font-size:.94rem}
-.give{background:var(--navy);color:var(--on-dark);border-radius:var(--r-lg);padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:14px}
-.give h3{color:#fff}
-.give p{color:var(--on-dark-mut);font-size:.96rem}
-.give .ic-box{width:50px;height:50px;background:rgba(234,177,58,.18);color:var(--gold)}
-.till{display:flex;align-items:center;justify-content:space-between;gap:14px;background:rgba(255,255,255,.06);border:1px solid var(--line-d);border-radius:var(--r);padding:16px 20px}
-.till small{display:block;color:var(--on-dark-mut);font-size:.78rem;margin-bottom:3px}
-.till b{font-family:var(--ff-head);font-weight:700;font-size:1.7rem;letter-spacing:.03em;color:#fff}
-.copy{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:var(--navy);font-weight:600;font-size:.88rem;padding:9px 14px;border-radius:var(--r-pill)}
-.give ol{margin:4px 0 0 0;padding-left:20px;display:flex;flex-direction:column;gap:7px;color:#dcdbd3;font-size:.94rem}
-.give ol b{color:#fff}
-
-/* ---------- FAQ (dark) ---------- */
-.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,64px);align-items:start}
-.faq .lead{color:var(--on-dark-mut);font-size:1.1rem;margin-top:12px}
-.acc details{border-bottom:1px solid var(--line-d)}
-.acc summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 2px;font-family:var(--ff-head);font-weight:560;font-size:1.1rem;color:#fff;cursor:pointer;list-style:none}
+/* ---------- FAQ (night) ---------- */
+.faq{display:grid;grid-template-columns:1fr;gap:34px;align-items:start}
+@media (min-width:860px){.faq{grid-template-columns:.8fr 1.2fr;gap:60px}}
+.faq .lead{margin-top:12px;color:#c4cadb}
+.acc{display:flex;flex-direction:column;gap:10px}
+.acc details{background:rgba(255,255,255,.05);border:1px solid var(--line-d);border-radius:var(--r-sm)}
+.acc summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 18px;font-weight:700;color:#fff;cursor:pointer;list-style:none;font-size:.98rem}
 .acc summary::-webkit-details-marker{display:none}
 .acc summary .i{color:var(--gold);transition:transform .25s}
 .acc details[open] summary .i{transform:rotate(180deg)}
-.acc .ans{padding:0 2px 22px;color:var(--on-dark-mut);max-width:62ch}
-.acc .ans a{color:var(--gold);font-weight:600}
+.acc .ans{padding:0 18px 18px;color:#c4cadb;font-size:.94rem}
+.acc .ans a{color:var(--gold-hi);font-weight:700}
 
-/* ---------- Contact (light) ---------- */
-.contact{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}
-.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(26px,3vw,40px)}
-.panel>h3{color:var(--head);margin-bottom:6px}
-.panel>p{color:var(--muted);font-size:.96rem;margin-bottom:22px}
+/* ---------- Prayer form ---------- */
+.prayer-card{max-width:620px;margin-inline:auto;background:var(--surface);border:1px solid var(--gold-edge);border-radius:var(--r-lg);padding:clamp(24px,4vw,36px)}
+.prayer-card .ic{background:#fff;color:var(--gold-deep);box-shadow:0 1px 0 var(--line)}
+.prayer-card h3{font-size:1.35rem;margin:18px 0 6px}
+.assure{list-style:none;display:grid;gap:12px;margin:18px 0 24px;padding:16px;background:#fff;border:1px solid var(--line);border-radius:var(--r-sm)}
+.assure li{display:flex;gap:12px;align-items:flex-start;font-size:.9rem;color:var(--muted);line-height:1.5}
+.assure b{display:block;color:var(--ink);font-size:.95rem}
+.assure .ic{width:36px;height:36px;border-radius:11px}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery figure{border-radius:16px;overflow:hidden;aspect-ratio:1;background:var(--line)}
+.gallery figure.wide{grid-column:span 2;aspect-ratio:16/9}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.04)}
+@media (min-width:860px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery figure.wide{grid-column:span 2}}
+.verse-card{max-width:680px;margin-inline:auto;background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:clamp(26px,4vw,40px);text-align:center}
+.verse-card .kicker{color:var(--gold-hi)}
+.verse-card blockquote{font-size:clamp(1.05rem,.95rem + .5vw,1.3rem);line-height:1.55;color:#eef0f7;font-weight:600}
+.verse-card cite{display:block;margin-top:14px;font-style:normal;font-size:.82rem;font-weight:700;color:var(--gold-hi);letter-spacing:.04em}
+.prayer-card>p{color:var(--muted);font-size:.95rem;margin-bottom:22px}
 .field{margin-bottom:16px}
-.field label{display:block;font-weight:600;font-size:.9rem;color:var(--head);margin-bottom:7px}
-.field .opt{font-weight:400;color:var(--muted)}
-input,select,textarea{width:100%;font:inherit;font-size:1rem;color:var(--head);background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;transition:border-color .2s,box-shadow .2s}
+.field label{display:block;font-weight:700;font-size:.9rem;color:var(--ink);margin-bottom:7px}
+.field label .opt{font-weight:500;color:var(--muted)}
+.field label .req{color:#b3261e}
+input,textarea{width:100%;font:inherit;font-size:.98rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 14px;transition:border-color .2s,box-shadow .2s}
 textarea{min-height:120px;resize:vertical}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(234,177,58,.22)}
-input:disabled{opacity:.5}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+input::placeholder,textarea::placeholder{color:#9ea3b4}
+input:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,169,71,.22)}
 .err{display:none;align-items:center;gap:7px;margin-top:7px;font-size:.84rem;color:#b3261e}
-.err .i{width:16px;height:16px;color:#b3261e}
+.err .i{width:16px;height:16px}
 [data-invalid] input,[data-invalid] textarea{border-color:#d3463a;background:#fdf3f2}
 [data-invalid] .err{display:flex}
-.check{display:flex;align-items:flex-start;gap:10px;font-size:.92rem;color:var(--body);margin-bottom:14px;cursor:pointer}
-.check input{width:auto;margin-top:3px}
-.privacy-note{display:flex;gap:11px;align-items:flex-start;background:var(--paper-2);border-radius:var(--r-sm);padding:14px 16px;font-size:.86rem;color:var(--muted);margin-bottom:18px}
-.privacy-note .i{color:var(--gold-deep);flex:none}
+.kept{font-size:.84rem;color:var(--muted);margin:-4px 0 16px}
+.check{display:flex;align-items:flex-start;gap:10px;font-size:.92rem;color:var(--body);margin-bottom:18px;cursor:pointer}
+.check input{width:auto;margin-top:4px;accent-color:var(--ink)}
 .status{display:none;gap:10px;align-items:flex-start;padding:14px 16px;border-radius:var(--r-sm);margin-bottom:16px;font-size:.92rem}
 .status.ok{display:flex;background:#eef7ee;color:#1e5b2a}
 .status.bad{display:flex;background:#fdf0ee;color:#9a271b}
 .status .i{flex:none}
-.status a{font-weight:600;text-decoration:underline}
-#submit{width:100%;justify-content:center}
+.status a{font-weight:700;text-decoration:underline}
+#submit{width:100%}
 #submit[aria-busy="true"] .spinner{display:block}
-.spinner{display:none;width:18px;height:18px;border:2.5px solid rgba(0,0,0,.25);border-top-color:#241803;border-radius:50%;animation:spin .7s linear infinite}
+.spinner{display:none;width:18px;height:18px;border:2.5px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.details{display:flex;flex-direction:column;gap:18px}
-.map{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;background:var(--paper-2)}
-.map iframe{width:100%;height:100%;border:0;display:block}
-.info{list-style:none;display:flex;flex-direction:column;gap:16px}
-.info li{display:flex;gap:14px;align-items:flex-start}
-.info b{display:block;font-family:var(--ff-head);font-weight:600;color:var(--head);margin-bottom:2px}
-.info span,.info a{color:var(--muted);font-size:.95rem}
-.info a{color:var(--navy);font-weight:600}
-.socials{display:flex;flex-wrap:wrap;gap:10px}
-.soc{display:inline-flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-pill);padding:10px 16px;font-weight:600;font-size:.9rem;color:var(--head);transition:border-color .2s,transform .18s}
-.soc:hover{border-color:var(--gold);transform:translateY(-2px)}
-.soc .i{color:var(--gold-deep);width:19px;height:19px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.talk{margin-top:22px;text-align:center;font-size:.9rem;color:var(--muted)}
+.talk a{display:block;margin-top:4px;font-weight:800;color:var(--ink);text-decoration:underline;text-underline-offset:3px;font-size:1rem}
+
+/* ---------- Give (navy) ---------- */
+.give{max-width:720px;margin-inline:auto;background:var(--ink);color:#c4cadb;border-radius:var(--r-lg);padding:clamp(26px,4vw,38px);position:relative;overflow:hidden}
+.give::after{content:"";position:absolute;right:-70px;top:-70px;width:200px;height:200px;border-radius:50%;background:rgba(212,169,71,.08);pointer-events:none}
+.give h2{color:#fff;font-size:clamp(1.5rem,1.1rem + 1.2vw,2rem);margin:14px 0 10px}
+.give>p{color:#c4cadb;font-size:.96rem;max-width:56ch}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);background:rgba(255,255,255,.07);border-radius:var(--r-pill);padding:5px;margin:22px 0 18px}
+.seg button{padding:11px 8px;border-radius:var(--r-pill);font-weight:700;font-size:.9rem;color:#c4cadb;display:flex;align-items:center;justify-content:center;gap:6px}
+.seg button[aria-selected="true"]{background:#fff;color:var(--ink)}
+.seg button:disabled{opacity:.55;cursor:not-allowed}
+.soon{font-size:.55rem;letter-spacing:.06em;background:var(--gold);color:var(--ink);padding:2px 5px;border-radius:6px;font-weight:800;text-transform:uppercase}
+.panel-card{background:#fff;color:var(--body);border-radius:var(--r);padding:22px}
+.tagline{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:#e7f5ea;color:#1e6b35;padding:6px 11px;border-radius:var(--r-pill)}
+.panel-card h3{margin:14px 0 14px;font-size:1.05rem}
+.till{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--surface)}
+.till small{display:block;color:var(--muted);font-size:.78rem;font-weight:600;margin-bottom:2px}
+.till b{font-size:1.5rem;font-weight:800;letter-spacing:.03em;color:var(--ink)}
+.copy{display:inline-flex;align-items:center;gap:7px;background:var(--ink);color:#fff;font-weight:700;font-size:.86rem;padding:11px 15px;border-radius:var(--r-pill);flex:none}
+.copy:hover{background:#1b2c52}
+.steps{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:20px}
+.steps li{display:flex;gap:12px;align-items:flex-start;font-size:.94rem;color:var(--body)}
+.steps .n{flex:none;width:26px;height:26px;border-radius:50%;background:var(--gold);color:var(--ink);font-weight:800;font-size:.8rem;display:grid;place-items:center}
+.steps b{color:var(--ink)}
+.trust{margin-top:18px;background:var(--gold-soft);border-radius:var(--r-sm);padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:.88rem;color:var(--body)}
+.trust div{display:flex;gap:9px;align-items:flex-start}
+.trust .i{width:16px;height:16px;color:var(--gold-deep);margin-top:3px}
+.give-note{font-size:.84rem;color:#aab2c6;margin-top:16px}
+[hidden]{display:none!important}
+
+/* ---------- Watch ---------- */
+.watch{max-width:820px;margin-inline:auto;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+.video{position:relative;aspect-ratio:16/9;background:var(--night);overflow:hidden}
+.video img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85}
+.video button{position:absolute;inset:0;width:100%;height:100%;display:grid;place-items:center}
+.video .play{display:grid;place-items:center;width:72px;height:72px;border-radius:50%;background:var(--gold);color:var(--ink);box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .2s}
+.video .play .i{width:28px;height:28px;margin-left:3px;stroke-width:2.2}
+.video button:hover .play{transform:scale(1.08)}
+.video iframe{width:100%;height:100%;border:0;display:block}
+.watch .body{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 24px}
+.watch .body h3{margin-bottom:2px}
+.watch .body p{color:var(--muted);font-size:.92rem}
 
 /* ---------- Footer ---------- */
-.foot{background:var(--blue-2);color:var(--on-dark-mut);padding-block:clamp(48px,6vw,72px) 32px}
-.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:36px}
+.foot{padding:0 20px 28px}
+.foot-card{max-width:var(--wrap);margin-inline:auto;background:var(--ink);color:#c4cadb;border-radius:var(--r-lg);padding:30px 26px;font-size:.94rem}
 .foot .brand b{color:#fff}
-.foot .brand small{color:var(--on-dark-mut)}
-.foot p{font-size:.92rem;color:var(--on-dark-mut)}
-.foot h4{color:#fff;font-family:var(--ff-head);font-weight:600;font-size:.98rem;margin-bottom:14px}
-.foot ul{list-style:none;display:flex;flex-direction:column;gap:9px}
-.foot ul a,.foot ul li{color:var(--on-dark-mut);font-size:.92rem}
-.foot ul a:hover{color:var(--gold)}
-.foot-bottom{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;margin-top:clamp(36px,5vw,56px);padding-top:24px;border-top:1px solid var(--line-d);font-size:.84rem}
-.lnk{color:var(--on-dark-mut);text-decoration:underline}
-.lnk:hover{color:var(--gold)}
+.foot .brand small{color:#c4cadb}
+.foot-list{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:22px}
+.foot-list li{display:flex;gap:12px;align-items:center}
+.foot-list .i{color:var(--gold);width:18px;height:18px}
+.foot-list a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.socials{display:flex;gap:10px;margin:22px 0 4px}
+.soc{width:44px;height:44px;border-radius:14px;background:rgba(255,255,255,.08);display:grid;place-items:center;color:#fff;transition:background .2s}
+.soc:hover{background:rgba(212,169,71,.22)}
+.foot-note{font-size:.82rem;color:#aab2c6;margin-top:18px;padding-top:18px;border-top:1px solid var(--line-d)}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:12px 20px;justify-content:space-between;align-items:center;margin-top:20px;font-size:.8rem;color:#aab2c6}
+.lnk{color:#c4cadb;text-decoration:underline;text-underline-offset:3px}
+.lnk:hover{color:var(--gold-hi)}
 
-/* ---------- Floating + toast + dialog ---------- */
-.wa{position:fixed;right:18px;bottom:18px;z-index:80;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.28)}
-.wa .i{width:28px;height:28px;stroke-width:2}
-.totop{position:fixed;right:18px;bottom:84px;z-index:80;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;opacity:0;visibility:hidden;transform:translateY(8px);transition:.25s}
-.totop.show{opacity:1;visibility:visible;transform:none}
-.toast{position:fixed;left:50%;bottom:26px;z-index:120;transform:translate(-50%,20px);opacity:0;visibility:hidden;display:flex;align-items:center;gap:9px;background:var(--navy);color:#fff;padding:13px 20px;border-radius:var(--r-pill);font-size:.92rem;font-weight:500;box-shadow:var(--shadow);transition:.3s}
-.toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
-.toast .i{color:var(--gold)}
-dialog{max-width:620px;width:92vw;border:0;border-radius:var(--r-lg);padding:0;color:var(--body);box-shadow:0 30px 80px rgba(0,0,0,.4)}
-dialog::backdrop{background:rgba(7,13,35,.55);backdrop-filter:blur(3px)}
-.dlg-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 26px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--card)}
-.dlg-head h2{font-size:1.4rem}
-.dlg-x{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--paper-2);color:var(--head)}
-.dlg-body{padding:24px 26px;max-height:70vh;overflow:auto}
-.dlg-body h3{font-size:1.05rem;margin:18px 0 8px;color:var(--head)}
-.dlg-body p,.dlg-body li{font-size:.95rem;margin-bottom:8px}
-.dlg-body ul{padding-left:20px}
-
-/* ---------- Liveliness / premium motion ---------- */
-.btn-gold:hover{box-shadow:0 12px 28px -8px rgba(234,177,58,.72)}
-.card{transition:transform .25s var(--ease),border-color .25s,box-shadow .3s}
-.card:hover{box-shadow:0 22px 46px -24px rgba(11,22,56,.55)}
-.fact{transition:transform .25s var(--ease),border-color .25s,box-shadow .3s}
-.fact:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 16px 32px -22px rgba(11,22,56,.4)}
-.soc:hover{box-shadow:0 12px 26px -16px rgba(11,22,56,.4)}
-.quote{transition:transform .25s var(--ease),border-color .25s}
-.quote:hover{transform:translateY(-3px);border-color:rgba(234,177,58,.5)}
-.step{transition:transform .25s var(--ease),border-color .25s}
-.step:hover{transform:translateY(-3px);border-color:var(--gold)}
-@media (prefers-reduced-motion:no-preference){
-  @keyframes heroKen{from{transform:scale(1.07)}to{transform:scale(1.18)}}
-  .hero-bg img{animation:heroKen 26s ease-in-out infinite alternate;transform-origin:60% 40%}
-  @keyframes floaty{from{transform:translateY(0)}to{transform:translateY(-7px)}}
-  .hero-chip{animation:floaty 3.6s ease-in-out infinite alternate}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-  .hero-in>*{animation:fadeUp .72s var(--ease) both}
-  .hero .kicker{animation-delay:.05s}.hero h1{animation-delay:.14s}.hero .lead{animation-delay:.28s}.hero-cta{animation-delay:.42s}.hero-facts{animation-delay:.56s}
-  @keyframes waRing{0%{box-shadow:0 10px 30px rgba(0,0,0,.28),0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 10px 30px rgba(0,0,0,.28),0 0 0 15px rgba(37,211,102,0)}100%{box-shadow:0 10px 30px rgba(0,0,0,.28),0 0 0 0 rgba(37,211,102,0)}}
-  .wa{animation:waRing 2.8s ease-out infinite}
-  @keyframes playPulse{0%{box-shadow:0 10px 30px rgba(0,0,0,.35),0 0 0 0 rgba(234,177,58,.5)}70%{box-shadow:0 10px 30px rgba(0,0,0,.35),0 0 0 20px rgba(234,177,58,0)}100%{box-shadow:0 10px 30px rgba(0,0,0,.35),0 0 0 0 rgba(234,177,58,0)}}
-  .video .play{animation:playPulse 3s ease-out infinite}
-}
-
-/* click-to-load map */
-.map{position:relative}
-.map-load{position:absolute;inset:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:var(--paper-2);color:var(--head);border:1px dashed var(--line);border-radius:inherit;transition:background .2s}
-.map-load:hover{background:#e6ddcb}
-.map-load .i{width:30px;height:30px;color:var(--gold-deep)}
-.map-load b{font-family:var(--ff-head);font-weight:600;display:block}
-.map-load small{display:block;color:var(--muted);font-size:.8rem;margin-top:2px}
-.map iframe{width:100%;height:100%;border:0;display:block}
-
-/* honeypot + reply note */
-.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
-.reply-note{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:16px}
-.reply-note .i{color:var(--gold-deep)}
-
-/* sticky mobile CTA */
-.mcta{position:fixed;left:0;right:0;bottom:0;z-index:85;display:none;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(245,241,232,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .35s var(--ease)}
-.mcta.show{transform:none}
-.mcta .btn-gold{flex:1;justify-content:center}
-.mcta .btn-outline{flex:none;padding:14px 16px}
+/* ---------- Bottom tabs (mobile) ---------- */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:90;height:var(--tabs-h);background:rgba(255,255,255,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:8px 6px calc(8px + env(safe-area-inset-bottom))}
+.tabs a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:.68rem;font-weight:700;color:var(--muted);border-radius:14px}
+.tabs .tb{width:50px;height:30px;border-radius:var(--r-pill);display:grid;place-items:center}
+.tabs a[aria-current="true"] .tb{background:var(--gold-soft);color:var(--ink)}
+.tabs a[aria-current="true"]{color:var(--ink)}
+.tabs .i{width:19px;height:19px}
+@media (min-width:861px){.tabs{display:none}}
 
 /* ---------- Reveal ---------- */
-[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
-[data-reveal].in{opacity:1;transform:none}
-[data-reveal][data-d="1"]{transition-delay:.08s}
-[data-reveal][data-d="2"]{transition-delay:.16s}
-[data-reveal][data-d="3"]{transition-delay:.24s}
-html:not(.js) [data-reveal]{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
+.js [data-reveal]{opacity:0;transform:translateY(14px);transition:opacity .6s var(--ease,ease),transform .6s}
+.js [data-reveal].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js [data-reveal]{opacity:1;transform:none;transition:none}}
 
-/* ---------- Responsive ---------- */
-@media (max-width:980px){
-  .menu{display:none}
-  .nav-cta{display:none}
-  .burger{display:grid}
-  .about,.pastor,.faq,.contact,.duo{grid-template-columns:1fr}
-  .pastor figure{min-height:300px;aspect-ratio:16/10}
-  .cards,.steps,.quotes{grid-template-columns:1fr 1fr}
-  .facts{grid-template-columns:1fr 1fr}
-  .upcoming{grid-template-columns:1fr}
-  .upcoming .art{min-height:200px}
-  .foot-grid{grid-template-columns:1fr 1fr}
-}
-@media (max-width:620px){
-  .cards,.steps,.quotes,.facts,.foot-grid{grid-template-columns:1fr}
-  .mcta{display:flex}
-  .mcta.show ~ .wa{bottom:calc(84px + env(safe-area-inset-bottom))}
-  .mcta.show ~ .totop{bottom:calc(146px + env(safe-area-inset-bottom))}
-  .hero-chip{display:none}
-  .hero-cta .btn{flex:1 1 auto;justify-content:center}
-  .watch .body{flex-direction:column;align-items:flex-start}
-  .foot-bottom{flex-direction:column}
-  .mosaic .m1{grid-row:auto;aspect-ratio:16/10}
-  .mosaic{grid-template-columns:1fr 1fr}
-}
+/* ---------- Dialogs & toast ---------- */
+dialog{max-width:620px;width:92vw;border:0;border-radius:var(--r-lg);padding:0;color:var(--body);box-shadow:0 30px 80px rgba(0,0,0,.4)}
+dialog::backdrop{background:rgba(7,13,35,.55)}
+.dlg-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff}
+.dlg-head h2{font-size:1.3rem}
+.dlg-x{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--surface);color:var(--ink)}
+.dlg-body{padding:22px 24px;max-height:70vh;overflow:auto}
+.dlg-body h3{font-size:1rem;margin:18px 0 8px}
+.dlg-body p,.dlg-body li{font-size:.94rem;margin-bottom:8px}
+.dlg-body ul{padding-left:20px}
+.toast{position:fixed;left:50%;bottom:calc(var(--tabs-h) + 14px);z-index:120;transform:translate(-50%,20px);opacity:0;visibility:hidden;display:flex;align-items:center;gap:9px;background:var(--ink);color:#fff;padding:13px 20px;border-radius:var(--r-pill);font-size:.92rem;font-weight:600;box-shadow:var(--shadow);transition:.3s}
+.toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.toast .i{color:var(--gold)}
+@media (min-width:861px){.toast{bottom:26px}}
 </style>
 </head>
 <body>
@@ -496,41 +408,43 @@ html:not(.js) [data-reveal]{opacity:1;transform:none}
     <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24 24 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.6 49.6 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24 24 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.6 49.6 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3Z"/></symbol>
     <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M17.5 2.5h-3a5 5 0 0 0-5 5v3h-3v4h3v7h4v-7h3l1-4h-4v-3a1 1 0 0 1 1-1h3Z"/></symbol>
     <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3.5 20.5 4.8 16A8.8 8.8 0 1 1 8 19.3Z"/><path d="M9 8.5c.2 3 3.4 6.3 6.5 6.5l1-1.3-1.8-1-1 .8a5 5 0 0 1-2.7-2.7l.8-1-1-1.8Z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1.5 1.5 0 0 1-1.5 1.5H15v-6H9v6H4.5A1.5 1.5 0 0 1 3 20Z"/></symbol>
   </defs>
 </svg>
 
+
 <a class="skip" href="#main">Skip to main content</a>
-<div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
   <div class="wrap nav-in">
     <a class="brand" href="#top" aria-label="New Life Church Litein — home">
-      <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5" fill="#132039" stroke="#f9b81f" stroke-width="1.4"/><path d="M8.5 27c4-3 9-4.6 13.5-4.6s9.5 1.6 13.5 4.6" fill="none" stroke="#eab13a" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M22 11v23M15.5 18h13" stroke="#eab13a" stroke-width="3" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5" fill="#0f1d3a" stroke="#d4a947" stroke-width="1.4"/><path d="M8.5 27c4-3 9-4.6 13.5-4.6s9.5 1.6 13.5 4.6" fill="none" stroke="#e8c46a" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M22 11v23M15.5 18h13" stroke="#d4a947" stroke-width="3" stroke-linecap="round"/></svg>
       <span><b>New Life Church</b><small>Prayer Center · Litein</small></span>
     </a>
     <nav aria-label="Main">
       <ul class="menu" id="menu">
         <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#pastor">Pastor</a></li>
         <li><a href="#visit">Your visit</a></li>
-        <li><a href="#watch">Watch &amp; give</a></li>
+        <li><a href="#watch">Watch</a></li>
+        <li><a href="#give">Give</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#prayer">Prayer</a></li>
       </ul>
     </nav>
-    <a class="btn btn-gold nav-cta" href="#contact" data-topic="Plan a visit" data-track="nav_cta">Plan your visit</a>
+    <a class="btn btn-gold nav-visit" href="#visit">Visit</a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg class="i"><use href="#i-menu"/></svg></button>
   </div>
 </header>
 <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <a href="#visit">Your visit <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
   <a href="#services">Services <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
-  <a href="#about">About <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
-  <a href="#visit">Your first visit <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
-  <a href="#watch">Watch &amp; give <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
+  <a href="#pastor">Pastor Rop <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
+  <a href="#watch">Watch sermons <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
+  <a href="#give">Give <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
   <a href="#faq">FAQ <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
-  <a href="#contact">Contact &amp; prayer <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
-  <a class="btn btn-gold" href="#contact" data-topic="Plan a visit">Plan your visit</a>
-  <a class="btn btn-outline" href="tel:+254741277938"><svg class="i"><use href="#i-phone"/></svg>Call 0741 277 938</a>
+  <a href="#prayer">Prayer request <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
+  <a class="btn btn-gold" href="tel:+254741277938"><svg class="i"><use href="#i-phone"/></svg>Call 0741 277 938</a>
 </div>
 
 <main id="main">
@@ -539,126 +453,102 @@ html:not(.js) [data-reveal]{opacity:1;transform:none}
 <section class="hero" id="top" aria-labelledby="hero-title">
   <div class="hero-bg"><img src="images/congregation.jpg" width="1600" height="1000" decoding="async" fetchpriority="high" alt="The New Life Church Litein congregation gathered together on a Sunday morning"></div>
   <div class="hero-scrim" aria-hidden="true"></div>
-  <a class="hero-chip" href="#top"><svg class="i"><use href="#i-broadcast"/></svg><span>Online prayer<b>Nightly · 8:00 PM</b></span></a>
-  <div class="wrap hero-in">
-    <p class="kicker">Karibu — you belong here</p>
-    <h1 id="hero-title">A house of prayer for every family in Litein</h1>
+  <div class="wrap">
+    <span class="pill-dot">Karibu · You belong here</span>
+    <h1 id="hero-title">A house of prayer for every family in <span class="gold">Litein.</span></h1>
     <p class="lead">Come as you are. Worship with us on Sunday, receive prayer for what you're carrying, and find a church family that walks with you.</p>
     <div class="hero-cta">
-      <a class="btn btn-gold" href="#contact" data-topic="Plan a visit" data-track="hero_plan">Plan your visit <svg class="i i-arrow"><use href="#i-arrow"/></svg></a>
-      <a class="btn btn-outline" href="#watch" data-track="hero_watch"><svg class="i"><use href="#i-play"/></svg>Watch</a>
-      <a class="btn btn-outline" href="#contact" data-topic="Prayer request" data-track="hero_prayer"><svg class="i"><use href="#i-hands"/></svg>Request prayer</a>
-    </div>
-    <div class="hero-facts">
-      <span><svg class="i"><use href="#i-clock"/></svg>Sundays 8:00 AM – 12:30 PM</span>
-      <span><svg class="i"><use href="#i-pin"/></svg>Opposite Koiwa Road, Litein</span>
-      <span data-next-sunday-wrap><svg class="i"><use href="#i-calendar"/></svg><span data-next-sunday>This Sunday · 8:00 AM</span></span>
+      <a class="btn btn-gold btn-block" href="#visit" data-track="hero_plan">Plan your visit <svg class="i"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-glass btn-block" href="#prayer" data-topic="Prayer request" data-track="hero_prayer"><svg class="i"><use href="#i-hands"/></svg>Request prayer</a>
     </div>
   </div>
 </section>
 
-<!-- AT A GLANCE + UPCOMING -->
-<section class="band on-paper" aria-labelledby="trust-title">
+<!-- SUNDAY CARD (overlaps hero) -->
+<div class="wrap">
+  <article class="hero-card" data-reveal aria-labelledby="sun-title">
+    <div class="hc-head">
+      <h3 id="sun-title">Sunday Worship</h3>
+      <span class="pill" data-next-sunday>Next: Sun 15 Nov</span>
+    </div>
+    <ul class="hc-list">
+      <li><span class="ic"><svg class="i"><use href="#i-clock"/></svg></span><div><b>Every Sunday, 8:00 AM – 12:30 PM</b><span>Special programmes from 1:00 PM</span></div></li>
+      <li><span class="ic"><svg class="i"><use href="#i-pin"/></svg></span><div><b>Opp. Koiwa Road junction, Litein</b><span>Near Litein Shopping Centre · Parking close by</span></div></li>
+      <li><span class="ic"><svg class="i"><use href="#i-message"/></svg></span><div><b>English &amp; Kiswahili</b><span>Everyone is welcome</span></div></li>
+    </ul>
+    <div class="hc-actions">
+      <a class="btn btn-navy btn-sm" href="https://www.google.com/maps/dir/?api=1&amp;destination=Koiwa+Road+Junction+Litein+Kenya" target="_blank" rel="noopener" data-track="directions"><svg class="i i-sm"><use href="#i-globe"/></svg>Directions</a>
+      <button class="btn btn-outline btn-sm" type="button" id="addCal"><svg class="i i-sm"><use href="#i-calendar"/></svg>Add to calendar</button>
+    </div>
+  </article>
+</div>
+
+<!-- WHO WE ARE -->
+<section class="band on-paper" id="about" aria-labelledby="about-title" style="padding-top:64px">
   <div class="wrap">
     <div class="head" data-reveal>
-      <h2 id="trust-title">Everything you need to know, at a glance</h2>
-      <p>Simple times, a central location, and people ready to pray with you — in person, by phone or online.</p>
+      <p class="kicker">Who we are</p>
+      <h2 id="about-title">Raising disciples, transforming lives, impacting our world</h2>
+      <p>We are a Bible-believing, Spirit-filled church. Every Sunday our sanctuary near Litein Shopping Centre fills with families, young people, choirs and fellowships — and there's always room for one more.</p>
     </div>
-    <div class="facts">
-      <div class="fact" data-reveal><span class="ic-box navy"><svg class="i"><use href="#i-calendar"/></svg></span><div><b>Every Sunday</b><span>8:00 AM – 12:30 PM, with special programmes from 1:00 PM</span></div></div>
-      <div class="fact" data-reveal data-d="1"><span class="ic-box"><svg class="i"><use href="#i-globe"/></svg></span><div><b>Part of the Newlife family</b><span>Main church at Mavueni, Kilifi County</span></div></div>
-      <div class="fact" data-reveal data-d="2"><span class="ic-box"><svg class="i"><use href="#i-broadcast"/></svg></span><div><b>Online every night</b><span>Prayer &amp; the Word from 8:00 PM on Facebook</span></div></div>
-      <div class="fact" data-reveal data-d="3"><span class="ic-box"><svg class="i"><use href="#i-phone"/></svg></span><div><b>Prayer &amp; counselling</b><span>Call or WhatsApp <a href="tel:+254741277938">0741 277 938</a></span></div></div>
-    </div>
-    <article class="upcoming" id="upcoming" data-reveal aria-live="polite"></article>
+    <ul class="values" data-reveal>
+      <li class="value"><span class="ic gold"><svg class="i"><use href="#i-hands"/></svg></span><div><b>Prayer first</b><span>We bring every need to God, together.</span></div></li>
+      <li class="value"><span class="ic gold"><svg class="i"><use href="#i-book"/></svg></span><div><b>Rooted in the Word</b><span>Clear Bible teaching for everyday life.</span></div></li>
+      <li class="value"><span class="ic gold"><svg class="i"><use href="#i-users"/></svg></span><div><b>Family for everyone</b><span>Fellowships, choirs and care that last beyond Sunday.</span></div></li>
+    </ul>
   </div>
 </section>
 
-<!-- SCRIPTURE ACT -->
-<section class="act" data-sc="act" aria-label="Encounter God. Grow in Faith. Live on Mission.">
-  <div class="stage">
-    <div class="photo"><img src="images/garden.jpg" width="1600" height="900" decoding="async" sizes="100vw" alt="" loading="lazy"><div class="scrim"></div></div>
-    <p class="lines">
-      <span class="line">Encounter God.</span>
-      <span class="line">Grow in Faith.</span>
-      <span class="line">Live on Mission.</span>
-      <span class="verse">"I came that they may have life, and have it to the full." — John 10:10</span>
-    </p>
+<!-- THIS SUNDAY + GLANCE -->
+<section class="band" id="visit" aria-labelledby="visit-title" style="padding-top:20px">
+  <div class="wrap">
+    <p class="kicker" id="visit-title" style="display:block;text-align:center">This Sunday</p>
+    <article class="upcard" id="upcoming" data-reveal aria-live="polite"></article>
+
+    <h3 class="glance-title" style="max-width:620px;margin-inline:auto">Everything at a glance</h3>
+    <div class="rows" data-reveal>
+      <div class="row"><span class="ic gold"><svg class="i"><use href="#i-broadcast"/></svg></span><div><b>Online every night</b><span>Prayer &amp; the Word from 8:00 PM on Facebook</span></div><a class="side" href="https://www.facebook.com/search/top?q=Pst%20Rop" target="_blank" rel="noopener" aria-label="Pastor Rop on Facebook" data-track="fb_click"><svg class="i i-sm"><use href="#i-facebook"/></svg></a></div>
+      <div class="row"><span class="ic gold"><svg class="i"><use href="#i-phone"/></svg></span><div><b>Prayer &amp; counselling</b><span>Call or WhatsApp <a class="num" href="tel:+254741277938">0741 277 938</a></span></div><a class="side" href="https://wa.me/254741277938" target="_blank" rel="noopener" aria-label="WhatsApp the church" data-track="whatsapp_click"><svg class="i i-sm"><use href="#i-whatsapp"/></svg></a></div>
+      <div class="row"><span class="ic gold"><svg class="i"><use href="#i-church"/></svg></span><div><b>Part of the Newlife family</b><span>Main church at Mavueni, Kilifi County</span></div></div>
+    </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="band on-blue" id="services" aria-labelledby="services-title">
+<section class="band on-paper-2" id="services" aria-labelledby="services-title" style="background:var(--surface)">
   <div class="wrap">
-    <div class="head" data-reveal>
-      <p class="kicker">Services</p>
-      <h2 id="services-title">Ways to meet with God and with us</h2>
-      <p>From Sunday worship to focused prayer programmes, every gathering is open to you — whether it's your first visit or your hundredth.</p>
+    <div class="head" data-reveal style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;max-width:none">
+      <div>
+        <p class="kicker">Services</p>
+        <h2 id="services-title">Ways to meet with God</h2>
+      </div>
+      <span class="swipe">Swipe <svg class="i i-sm"><use href="#i-arrow"/></svg></span>
     </div>
-    <div class="cards" id="svcCards"></div>
+    <div class="rail" id="svcCards" data-reveal></div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="band on-dark" id="about" aria-labelledby="about-title">
+<!-- PASTOR -->
+<section class="band" id="pastor" aria-labelledby="pastor-title" style="padding-top:20px">
   <div class="wrap">
-    <div class="about">
-      <div class="mosaic" data-reveal>
-        <figure class="m1"><img src="images/pastor-walk.jpg" width="536" height="712" decoding="async" sizes="(min-width:960px) 26vw, 52vw" alt="Pastor Rop ministering among the congregation" loading="lazy"></figure>
-        <figure class="m2"><img src="images/choir.jpg" width="536" height="536" decoding="async" sizes="(min-width:960px) 20vw, 40vw" alt="Choir members in yellow and black uniforms with church members" loading="lazy"></figure>
-        <figure class="m3"><img src="images/worship.jpg" width="536" height="536" decoding="async" sizes="(min-width:960px) 20vw, 40vw" alt="Worshippers lifting their hands in prayer" loading="lazy"></figure>
+    <article class="pastor" data-reveal>
+      <div class="pastor-top">
+        <figure><img src="images/pastor-garden.jpg" width="536" height="437" decoding="async" sizes="96px" alt="Pastor Rop holding a Bible outdoors"></figure>
+        <div>
+          <p class="kicker">Meet our pastor</p>
+          <h3 id="pastor-title">Pastor Rop</h3>
+          <span class="role">Senior Pastor, New Life Church Litein</span>
+        </div>
       </div>
-      <div data-reveal data-d="1">
-        <p class="kicker">About us</p>
-        <h2 id="about-title">Raising disciples, transforming lives, impacting our world</h2>
-        <p>New Life Prayer Center and Church grew from a simple conviction: God still meets people in prayer, heals the broken and sets captives free. Today our sanctuary near Litein Shopping Centre fills every Sunday with families, young people, choirs and fellowships.</p>
-        <p>We are a Bible-believing, Spirit-filled church. Services are in English and Kiswahili, and everyone — searching, hurting or simply new in town — is welcome.</p>
-        <ul class="values">
-          <li><span class="ic-box"><svg class="i"><use href="#i-hands"/></svg></span><div><b>Prayer first</b><span>We bring every need to God, together.</span></div></li>
-          <li><span class="ic-box"><svg class="i"><use href="#i-book"/></svg></span><div><b>Rooted in the Word</b><span>Clear Bible teaching for everyday life.</span></div></li>
-          <li><span class="ic-box"><svg class="i"><use href="#i-users"/></svg></span><div><b>Family for everyone</b><span>Fellowships, choirs and care that last beyond Sunday.</span></div></li>
-        </ul>
-        <a class="btn btn-gold" href="#visit">What to expect on Sunday <svg class="i i-arrow"><use href="#i-arrow"/></svg></a>
-      </div>
-    </div>
-
-    <article class="pastor" data-reveal aria-labelledby="pastor-title">
-      <figure><img src="images/pastor-garden.jpg" width="536" height="437" decoding="async" sizes="(min-width:860px) 36vw, 100vw" alt="Pastor Rop holding a Bible outdoors" loading="lazy"></figure>
-      <div class="txt">
-        <h3 id="pastor-title">Pastor Rop</h3>
-        <span class="role">Senior Pastor, New Life Church Litein</span>
-        <p>Pastor Rop leads the church with a passion for prayer and the transforming power of the Gospel. He leads Sunday worship, Holy Communion and testimony services, outreach crusades such as Kibugat, and the nightly online prayer service.</p>
-        <p>His teaching calls believers to stand firm, to see setbacks as God's redirection, and to trust God for healing, deliverance and breakthrough.</p>
-        <blockquote class="verse">"This is the Lord's doing; it is marvellous in our eyes."<cite>Psalm 118:23</cite></blockquote>
-        <a class="btn btn-gold" href="#contact" data-topic="Counselling"><svg class="i"><use href="#i-message"/></svg>Book a counselling session</a>
-      </div>
+      <p class="pastor-copy">Pastor Rop leads the church with a passion for prayer and the transforming power of the Gospel — calling believers to stand firm, and to trust God for healing and breakthrough.</p>
+      <blockquote class="verse">“This is the Lord's doing; it is marvellous in our eyes.”<cite>Psalm 118:23</cite></blockquote>
+      <a class="btn btn-outline btn-block" href="#prayer" data-topic="Counselling" data-track="pastor_counselling"><svg class="i"><use href="#i-message"/></svg>Book a counselling session</a>
     </article>
-
-    <div class="family" data-reveal>
-      <div class="row"><span class="ic-box"><svg class="i"><use href="#i-church"/></svg></span><div><b>Part of Newlife Prayer Center &amp; Church</b><br>Our main church is at Mavueni, Kilifi County.</div></div>
-      <a class="btn btn-outline" href="https://newlifeprayercenterandchurch.org/" target="_blank" rel="noopener">Visit the main church site <svg class="i i-arrow"><use href="#i-arrow"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- STEPS -->
-<section class="band on-paper-2" id="visit" aria-labelledby="visit-title">
-  <div class="wrap">
-    <div class="head" data-reveal>
-      <h2 id="visit-title">Your first Sunday, step by step</h2>
-      <p>No pressure and no surprises. Here's how a visit usually goes.</p>
-    </div>
-    <ol class="steps">
-      <li class="step" data-reveal><span class="num" aria-hidden="true">01</span><span class="ic-box navy"><svg class="i"><use href="#i-pin"/></svg></span><h3>Plan your visit</h3><p>Arrive from 8:00 AM, opposite Koiwa Road junction near Litein Shopping Centre. Parking is close by.</p></li>
-      <li class="step" data-reveal data-d="1"><span class="num" aria-hidden="true">02</span><span class="ic-box navy"><svg class="i"><use href="#i-door"/></svg></span><h3>Be welcomed</h3><p>Our ushers will greet you, help you find a seat and answer any questions.</p></li>
-      <li class="step" data-reveal data-d="2"><span class="num" aria-hidden="true">03</span><span class="ic-box navy"><svg class="i"><use href="#i-music"/></svg></span><h3>Worship &amp; the Word</h3><p>Joyful praise led by our choirs, followed by a clear, practical Bible message.</p></li>
-      <li class="step" data-reveal data-d="3"><span class="num" aria-hidden="true">04</span><span class="ic-box navy"><svg class="i"><use href="#i-hands"/></svg></span><h3>Prayer &amp; connection</h3><p>Receive prayer if you wish — you're free to come forward or stay seated — then meet the family.</p></li>
-    </ol>
   </div>
 </section>
 
 <!-- TESTIMONIES -->
-<section class="band on-dark" aria-labelledby="testi-title">
+<section class="band on-night" aria-labelledby="testi-title">
   <div class="wrap">
     <div class="head" data-reveal>
       <p class="kicker">Testimonies</p>
@@ -670,142 +560,192 @@ html:not(.js) [data-reveal]{opacity:1;transform:none}
   </div>
 </section>
 
-<!-- WATCH & GIVE -->
-<section class="band on-paper" id="watch" aria-labelledby="watch-title">
-  <div class="wrap">
-    <div class="head" data-reveal>
-      <h2 id="watch-title">Worship from anywhere, give with ease</h2>
-      <p>Catch the latest sermons from Pastor Rop, or support the ministry in seconds with M-PESA.</p>
-    </div>
-    <div class="duo">
-      <article class="watch" data-reveal>
-        <div class="video" data-src="https://www.youtube.com/embed/videoseries?list=UUl7TeWGqMyP4OvVOR3IwXYg">
-          <button type="button" aria-label="Play the latest sermons from Pastor Rop on YouTube"><img src="images/pastor-blue.jpg" width="940" height="529" decoding="async" sizes="(min-width:900px) 54vw, 100vw" alt="" loading="lazy"><span class="play"><svg class="i"><use href="#i-play"/></svg></span></button>
-        </div>
-        <div class="body">
-          <div><h3>Latest sermons</h3><p>Sunday services and teaching on YouTube</p></div>
-          <a class="btn btn-light" href="https://www.youtube.com/@pastorrop?sub_confirmation=1" target="_blank" rel="noopener" data-track="yt_sub"><svg class="i"><use href="#i-youtube"/></svg>Subscribe</a>
-        </div>
-      </article>
-      <article class="give" data-reveal data-d="1" aria-labelledby="give-title">
-        <span class="ic-box"><svg class="i"><use href="#i-mobile"/></svg></span>
-        <h3 id="give-title">Give with M-PESA</h3>
-        <p>Your tithes and offerings support worship, outreach, crusades and our media ministry.</p>
-        <div class="till"><div><small>Buy Goods · Till number</small><b>6887385</b></div><button class="copy" type="button" id="copyTill"><svg class="i i-sm"><use href="#i-copy"/></svg>Copy</button></div>
-        <ol>
-          <li>Open M-PESA → <b>Lipa na M-PESA</b> → <b>Buy Goods</b></li>
-          <li>Enter till <b>6887385</b>, the amount and your PIN</li>
-          <li>Check the name shown before you confirm</li>
-        </ol>
-        <p style="font-size:.88rem">Giving is always voluntary. For an official receipt, WhatsApp your M-PESA code to 0741 277 938.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- FAQ -->
-<section class="band on-dark" id="faq" aria-labelledby="faq-title">
+<section class="band on-night" id="faq" aria-labelledby="faq-title" style="padding-top:0">
   <div class="wrap faq">
     <div data-reveal>
       <p class="kicker">FAQ</p>
       <h2 id="faq-title">Questions, answered</h2>
       <p class="lead">Still unsure about something? Call or WhatsApp us — we're glad to help.</p>
-      <a class="link" href="tel:+254741277938" style="margin-top:22px">Call 0741 277 938 <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
+      <a class="link" href="tel:+254741277938" style="margin-top:22px;color:var(--gold-hi)">Call 0741 277 938 <svg class="i i-sm"><use href="#i-arrow"/></svg></a>
     </div>
     <div class="acc" data-reveal data-d="1">
       <details><summary>What time are services?<svg class="i"><use href="#i-chev"/></svg></summary><div class="ans">Sunday worship runs from 8:00 AM to 12:30 PM. Special programmes such as anointing weeks usually run from 1:00 PM, and there's an online prayer service on Facebook every evening from 8:00 PM.</div></details>
-      <details><summary>Where exactly is the church?<svg class="i"><use href="#i-chev"/></svg></summary><div class="ans">Opposite Koiwa Road junction, near Litein Shopping Centre in Litein, Kericho County. Any boda boda rider in town can bring you to New Life Church. <a href="#contact">See the map</a>.</div></details>
+      <details><summary>Where exactly is the church?<svg class="i"><use href="#i-chev"/></svg></summary><div class="ans">Opposite Koiwa Road junction, near Litein Shopping Centre in Litein, Kericho County. Any boda boda rider in town can bring you to New Life Church. <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Koiwa+Road+Junction+Litein+Kenya" target="_blank" rel="noopener">Get directions</a>.</div></details>
       <details><summary>What should I wear?<svg class="i"><use href="#i-chev"/></svg></summary><div class="ans">Come as you are. Some people wear their Sunday best, others come in everyday clothes — both are welcome.</div></details>
       <details><summary>Is there something for children?<svg class="i"><use href="#i-chev"/></svg></summary><div class="ans">Children are welcome in the service with their families. Ask an usher about Sunday school when you arrive.</div></details>
-      <details><summary>Can I get personal prayer or counselling?<svg class="i"><use href="#i-chev"/></svg></summary><div class="ans">Yes. Use the <a href="#contact">form below</a>, speak to an usher after the service, or call/WhatsApp 0741 277 938 to arrange time with Pastor Rop. The church office is open 8:00 AM – 3:00 PM.</div></details>
+      <details><summary>Can I get personal prayer or counselling?<svg class="i"><use href="#i-chev"/></svg></summary><div class="ans">Yes. Use the <a href="#prayer">prayer form</a>, speak to an usher after the service, or call/WhatsApp 0741 277 938 to arrange time with Pastor Rop. The church office is open 8:00 AM – 3:00 PM.</div></details>
       <details><summary>Do I have to give?<svg class="i"><use href="#i-chev"/></svg></summary><div class="ans">No. Giving is voluntary and is never a condition for prayer, counselling or ministry.</div></details>
       <details><summary>Can I watch if I can't come in person?<svg class="i"><use href="#i-chev"/></svg></summary><div class="ans">Yes — sermons are on YouTube (@pastorrop) and Pastor Rop goes live on Facebook for the nightly prayer service.</div></details>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="band on-paper" id="contact" aria-labelledby="contact-title">
+<!-- GALLERY -->
+<section class="band" id="gallery" aria-labelledby="gallery-title" style="padding-top:20px">
   <div class="wrap">
     <div class="head" data-reveal>
-      <h2 id="contact-title">Plan a visit, request prayer or say hello</h2>
-      <p>Send us a short message and our team will get back to you. Prayer requests stay confidential.</p>
+      <p class="kicker">Moments of glory</p>
+      <h2 id="gallery-title">Photo gallery</h2>
+      <p>Witness the mighty works of God through captured moments of worship, healing, deliverance and community fellowship.</p>
     </div>
-    <div class="contact">
-      <div class="panel" data-reveal>
-        <h3>Send a message</h3>
-        <p>Your message opens in WhatsApp, ready to send to the church.</p>
-        <form id="form" novalidate>
-          <div class="hp" aria-hidden="true"><label>Company (leave blank)<input type="text" id="company" name="company" tabindex="-1" autocomplete="off"></label></div>
-          <div class="field" id="f-topic">
-            <label for="topic">How can we help?</label>
-            <select id="topic" name="topic">
-              <option>Plan a visit</option><option>Prayer request</option><option>Counselling</option><option>Share a testimony</option><option>General question</option>
-            </select>
-          </div>
-          <div class="grid-2">
-            <div class="field" id="f-name">
-              <label for="name">Your name</label>
-              <input id="name" name="name" autocomplete="name" aria-describedby="e-name">
-              <p class="err" id="e-name"><svg class="i"><use href="#i-alert"/></svg>Please tell us your name, or tick "stay anonymous".</p>
-            </div>
-            <div class="field" id="f-phone">
-              <label for="phone">Phone <span class="opt">(optional)</span></label>
-              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="07XX XXX XXX" aria-describedby="e-phone">
-              <p class="err" id="e-phone"><svg class="i"><use href="#i-alert"/></svg>Please enter a valid phone number, e.g. 0712 345 678.</p>
-            </div>
-          </div>
-          <div class="field" id="f-msg">
-            <label for="msg">Message</label>
-            <textarea id="msg" name="msg" aria-describedby="e-msg" placeholder="A few words are enough"></textarea>
-            <p class="err" id="e-msg"><svg class="i"><use href="#i-alert"/></svg>Please write a short message (at least 5 characters).</p>
-          </div>
-          <label class="check"><input type="checkbox" id="anon"> Stay anonymous (we'll leave out your name and phone)</label>
-          <label class="check" id="consentWrap" hidden><input type="checkbox" id="consent"> You may share my testimony using my first name and town only.</label>
-          <div class="privacy-note"><svg class="i"><use href="#i-shield"/></svg><span>Prayer requests are seen only by Pastor Rop and the prayer team and are never published. See our <button type="button" class="lnkp" data-dialog="privacy" style="background:none;border:0;color:var(--navy);font-weight:600;text-decoration:underline;padding:0;cursor:pointer">privacy policy</button>.</span></div>
-          <p class="reply-note"><svg class="i i-sm"><use href="#i-clock"/></svg>We usually reply within a day — same day during office hours.</p>
-          <div class="status" id="status" role="status" aria-live="polite"></div>
-          <button class="btn btn-gold" type="submit" id="submit"><span class="spinner" aria-hidden="true"></span><svg class="i"><use href="#i-whatsapp"/></svg><span id="submitText">Send via WhatsApp</span></button>
-        </form>
-      </div>
-      <div class="details" data-reveal data-d="1">
-        <div class="map" id="map" data-map="https://maps.google.com/maps?q=Koiwa%20Road%20Junction%2C%20Litein%2C%20Kenya&amp;z=15&amp;output=embed">
-          <button type="button" class="map-load" id="mapLoad" aria-label="Load the Google map of the church location"><svg class="i"><use href="#i-pin"/></svg><span><b>Show the map</b><small>Loads Google Maps · may set cookies</small></span></button>
-        </div>
-        <ul class="info">
-          <li><span class="ic-box navy"><svg class="i"><use href="#i-pin"/></svg></span><div><b>Visit</b><span>Opposite Koiwa Road junction, near Litein Shopping Centre, Litein, Kericho County</span><br><a class="link" href="https://www.google.com/maps/dir/?api=1&destination=Koiwa+Road+Junction+Litein+Kenya" target="_blank" rel="noopener" data-track="directions" style="margin-top:8px">Get directions <svg class="i i-sm"><use href="#i-arrow"/></svg></a></div></li>
-          <li><span class="ic-box"><svg class="i"><use href="#i-phone"/></svg></span><div><b>Call or WhatsApp</b><a href="tel:+254741277938">+254 741 277 938</a></div></li>
-          <li><span class="ic-box"><svg class="i"><use href="#i-clock"/></svg></span><div><b>Hours</b><span>Sunday worship 8:00 AM – 12:30 PM<br>Church office 8:00 AM – 3:00 PM</span></div></li>
-        </ul>
-        <div class="socials" aria-label="Social media">
-          <a class="soc" href="https://www.youtube.com/@pastorrop" target="_blank" rel="noopener"><svg class="i"><use href="#i-youtube"/></svg>YouTube</a>
-          <a class="soc" href="https://www.facebook.com/search/top?q=Pst%20Rop" target="_blank" rel="noopener"><svg class="i"><use href="#i-facebook"/></svg>Pastor Rop</a>
-          <a class="soc" href="https://wa.me/254741277938" target="_blank" rel="noopener"><svg class="i"><use href="#i-whatsapp"/></svg>WhatsApp</a>
-        </div>
-      </div>
+    <div class="gallery" data-reveal>
+      <figure class="wide"><img src="images/congregation.jpg" width="1600" height="1000" loading="lazy" decoding="async" alt="The congregation gathered for Sunday worship"></figure>
+      <figure><img src="images/choir.jpg" width="536" height="536" loading="lazy" decoding="async" alt="Choir members in yellow and black uniforms with church members"></figure>
+      <figure><img src="images/worship.jpg" width="536" height="536" loading="lazy" decoding="async" alt="Worshippers lifting their hands in prayer"></figure>
+      <figure><img src="images/pastor-walk.jpg" width="536" height="712" loading="lazy" decoding="async" alt="Pastor Rop ministering among the congregation"></figure>
+      <figure><img src="images/garden.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="The church garden in Litein"></figure>
     </div>
   </div>
 </section>
+
+<!-- SCRIPTURE -->
+<section class="band" aria-labelledby="scripture-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="verse-card" data-reveal>
+      <p class="kicker" id="scripture-title">Today's scripture</p>
+      <blockquote>“Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.”</blockquote>
+      <cite>Proverbs 3:5–6 (KJV)</cite>
+    </div>
+  </div>
+</section>
+
+<!-- PRAYER -->
+<section class="band" id="prayer" aria-labelledby="prayer-title">
+  <div class="wrap">
+    <div class="prayer-card" data-reveal>
+      <span class="ic lg"><svg class="i"><use href="#i-hands"/></svg></span>
+      <h3 id="prayer-title">How can we pray for you?</h3>
+      <p>Our prayer team reads every request. Share as much or as little as you like.</p>
+      <ul class="assure">
+        <li><span class="ic gold"><svg class="i"><use href="#i-hands"/></svg></span><div><b>Power of prayer</b>Every request is brought before God, together.</div></li>
+        <li><span class="ic gold"><svg class="i"><use href="#i-shield"/></svg></span><div><b>Confidential &amp; respectful</b>Read only by the pastors and prayer team.</div></li>
+        <li><span class="ic gold"><svg class="i"><use href="#i-users"/></svg></span><div><b>Faith community</b>Walk with us through what you're carrying.</div></li>
+      </ul>
+      <form id="form" novalidate>
+        <div class="hp" aria-hidden="true"><label>Company (leave blank)<input type="text" id="company" name="company" tabindex="-1" autocomplete="off"></label></div>
+        <input type="hidden" id="topic" name="topic" value="Prayer request">
+        <div class="field" id="f-name">
+          <label for="name">Your name <span class="opt">(optional)</span></label>
+          <input id="name" name="name" autocomplete="name" placeholder="e.g. Grace">
+        </div>
+        <div class="field" id="f-phone">
+          <label for="phone">Phone or WhatsApp <span class="opt">(optional)</span></label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="07XX XXX XXX" aria-describedby="e-phone">
+          <p class="err" id="e-phone"><svg class="i"><use href="#i-alert"/></svg>Please enter a valid phone number, e.g. 0712 345 678.</p>
+        </div>
+        <div class="field" id="f-msg">
+          <label for="msg">Prayer request <span class="req">*</span></label>
+          <textarea id="msg" name="msg" aria-describedby="e-msg" placeholder="What would you like us to pray about?"></textarea>
+          <p class="err" id="e-msg"><svg class="i"><use href="#i-alert"/></svg>Please write a short message (at least 5 characters).</p>
+        </div>
+        <p class="kept">Kept confidential within the pastoral team.</p>
+        <label class="check"><input type="checkbox" id="private" checked> Only share with the pastors — don't mention my name in church.</label>
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+        <button class="btn btn-navy" type="submit" id="submit"><span class="spinner" aria-hidden="true"></span><span id="submitText">Send prayer request</span> <svg class="i"><use href="#i-arrow"/></svg></button>
+      </form>
+      <p class="talk">Prefer to talk?<a href="tel:+254741277938">Call 0741 277 938</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- GIVE -->
+<section class="band" id="give" aria-labelledby="give-title" style="padding-top:20px">
+  <div class="wrap">
+    <div class="give" data-reveal>
+      <span class="ic lg glass" style="background:var(--gold);color:var(--ink)"><svg class="i"><use href="#i-mobile"/></svg></span>
+      <p class="kicker" style="margin:14px 0 0">Give</p>
+      <h2 id="give-title">Support the work of God in Litein</h2>
+      <p>Your tithes and offerings support worship, prayer and outreach in our community. Choose the method that works for you.</p>
+
+      <div class="seg" role="tablist" aria-label="Giving method">
+        <button type="button" role="tab" aria-selected="true" aria-controls="p-mpesa" data-tab="mpesa">M-Pesa</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="p-bank" data-tab="bank">Bank</button>
+        <button type="button" role="tab" aria-selected="false" disabled>Card <span class="soon">Soon</span></button>
+      </div>
+
+      <div class="panel-card" id="p-mpesa" role="tabpanel" data-panel="mpesa">
+        <span class="tagline">M-PESA</span>
+        <h3>Lipa na M-PESA · Buy Goods</h3>
+        <div class="till">
+          <div><small>Buy Goods · Till number</small><b>6887385</b></div>
+          <button class="copy" type="button" id="copyTill"><svg class="i i-sm"><use href="#i-copy"/></svg>Copy</button>
+        </div>
+        <ol class="steps">
+          <li><span class="n">1</span><span>Open M-PESA → <b>Lipa na M-PESA</b> → <b>Buy Goods</b>.</span></li>
+          <li><span class="n">2</span><span>Enter till <b>6887385</b>, your amount and M-PESA PIN.</span></li>
+          <li><span class="n">3</span><span><b>Check the name</b> matches the registered church name before you confirm. Keep the SMS as your receipt.</span></li>
+        </ol>
+        <div class="trust">
+          <div><svg class="i"><use href="#i-shield"/></svg>Give only to the official church accounts listed here.</div>
+          <div><svg class="i"><use href="#i-alert"/></svg>We will never ask you to send money to a personal number.</div>
+          <div><svg class="i"><use href="#i-phone"/></svg>Questions about giving? Call 0741 277 938.</div>
+        </div>
+      </div>
+
+      <div class="panel-card" id="p-bank" role="tabpanel" data-panel="bank" hidden>
+        <h3>Bank giving</h3>
+        <p style="font-size:.94rem;color:var(--body)">For bank transfer details, call or WhatsApp <a href="tel:+254741277938" style="font-weight:800;color:var(--ink);text-decoration:underline">0741 277 938</a> and the church office will share them with you.</p>
+      </div>
+
+      <p class="give-note">Giving is always voluntary. For an official receipt, WhatsApp your M-PESA code to 0741 277 938.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WATCH -->
+<section class="band on-paper-2" id="watch" aria-labelledby="watch-title" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <p class="kicker">Watch</p>
+      <h2 id="watch-title">Watch sermons</h2>
+      <p>Latest messages &amp; nightly prayer</p>
+      <span class="pill" style="margin-top:14px">Nightly prayer · 8:00 PM on Facebook</span>
+    </div>
+    <article class="watch" data-reveal>
+      <div class="video" data-src="https://www.youtube-nocookie.com/embed/videoseries?list=UUl7TeWGqMyP4OvVOR3IwXYg">
+        <button type="button" aria-label="Play the latest sermons from Pastor Rop on YouTube"><img src="images/pastor-blue.jpg" width="940" height="529" decoding="async" sizes="(min-width:900px) 820px, 100vw" alt="" loading="lazy"><span class="play"><svg class="i"><use href="#i-play"/></svg></span></button>
+      </div>
+      <div class="body">
+        <div><h3>Latest sermons</h3><p>Sunday services and teaching on YouTube</p></div>
+        <a class="btn btn-navy btn-sm" href="https://www.youtube.com/@pastorrop?sub_confirmation=1" target="_blank" rel="noopener" data-track="yt_sub"><svg class="i i-sm"><use href="#i-youtube"/></svg>Subscribe</a>
+      </div>
+    </article>
+  </div>
+</section>
+
 </main>
 
 <!-- FOOTER -->
 <footer class="foot">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="#top"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5" fill="#0e1a30" stroke="#f9b81f" stroke-width="1.4"/><path d="M8.5 27c4-3 9-4.6 13.5-4.6s9.5 1.6 13.5 4.6" fill="none" stroke="#f9b81f" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M22 11v23M15.5 18h13" stroke="#eab13a" stroke-width="3" stroke-linecap="round"/></svg><span><b>New Life Church</b><small>Prayer Center · Litein</small></span></a>
-        <p style="margin-top:16px;max-width:34ch">Raising disciples · Transforming lives · Impacting our world. Part of Newlife Prayer Center &amp; Church.</p>
-      </div>
-      <div><h4>Explore</h4><ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#visit">Your first visit</a></li><li><a href="#faq">FAQ</a></li></ul></div>
-      <div><h4>Connect</h4><ul><li><a href="#watch">Watch sermons</a></li><li><a href="#watch">Give</a></li><li><a href="#contact" data-topic="Prayer request">Request prayer</a></li><li><a href="#contact">Contact</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="tel:+254741277938">0741 277 938</a></li><li>Opp. Koiwa Road, Litein</li><li>Office 8:00 AM – 3:00 PM</li><li>M-PESA Till 6887385</li></ul></div>
+  <div class="foot-card">
+    <a class="brand" href="#top"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5" fill="#0f1d3a" stroke="#d4a947" stroke-width="1.4"/><path d="M8.5 27c4-3 9-4.6 13.5-4.6s9.5 1.6 13.5 4.6" fill="none" stroke="#e8c46a" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><path d="M22 11v23M15.5 18h13" stroke="#d4a947" stroke-width="3" stroke-linecap="round"/></svg><span><b>New Life Church</b><small>Prayer Center · Litein</small></span></a>
+    <ul class="foot-list">
+      <li><svg class="i"><use href="#i-clock"/></svg><span>Sundays 8:00 AM – 12:30 PM</span></li>
+      <li><svg class="i"><use href="#i-pin"/></svg><span>Opp. Koiwa Road junction, near Litein Shopping Centre</span></li>
+      <li><svg class="i"><use href="#i-phone"/></svg><a href="tel:+254741277938">0741 277 938</a></li>
+    </ul>
+    <div class="socials" aria-label="Social media">
+      <a class="soc" href="https://www.facebook.com/search/top?q=Pst%20Rop" target="_blank" rel="noopener" aria-label="Facebook"><svg class="i"><use href="#i-facebook"/></svg></a>
+      <a class="soc" href="https://wa.me/254741277938" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="i"><use href="#i-whatsapp"/></svg></a>
+      <a class="soc" href="https://www.youtube.com/@pastorrop" target="_blank" rel="noopener" aria-label="YouTube"><svg class="i"><use href="#i-youtube"/></svg></a>
     </div>
+    <p class="foot-note">Part of Newlife Prayer Center &amp; Church · Main church at Mavueni, Kilifi County.</p>
     <div class="foot-bottom">
       <span>© <span id="year">2026</span> New Life Prayer Center and Church – Litein. All rights reserved.</span>
-      <span style="display:flex;gap:20px"><button class="lnk" type="button" data-dialog="privacy">Privacy policy</button><button class="lnk" type="button" data-dialog="terms">Terms of use</button></span>
+      <span style="display:flex;gap:18px"><button class="lnk" type="button" data-dialog="privacy">Privacy policy</button><button class="lnk" type="button" data-dialog="terms">Terms of use</button></span>
     </div>
   </div>
 </footer>
+
+<!-- MOBILE TABS -->
+<nav class="tabs" aria-label="Quick links">
+  <a href="#top" data-tab-link="top"><span class="tb"><svg class="i"><use href="#i-home"/></svg></span>Home</a>
+  <a href="#visit" data-tab-link="visit"><span class="tb"><svg class="i"><use href="#i-pin"/></svg></span>Visit</a>
+  <a href="#watch" data-tab-link="watch"><span class="tb"><svg class="i"><use href="#i-play"/></svg></span>Watch</a>
+  <a href="#give" data-tab-link="give"><span class="tb"><svg class="i"><use href="#i-mobile"/></svg></span>Give</a>
+  <a href="#prayer" data-tab-link="prayer"><span class="tb"><svg class="i"><use href="#i-hands"/></svg></span>Prayer</a>
+</nav>
 
 <dialog id="privacy" aria-labelledby="privacy-h">
   <div class="dlg-head"><h2 id="privacy-h">Privacy policy</h2><button class="dlg-x" type="button" data-close aria-label="Close"><svg class="i"><use href="#i-x"/></svg></button></div>
@@ -813,13 +753,13 @@ html:not(.js) [data-reveal]{opacity:1;transform:none}
     <p><b>Last updated:</b> 22 October 2026</p>
     <p>New Life Prayer Center and Church – Litein (“we”) respects your privacy. This page explains what happens to information you share through this website.</p>
     <h3>What we collect</h3>
-    <ul><li>This website does not store form submissions. When you use the contact form, your message opens in WhatsApp and is sent only when you press send.</li><li>Messages sent to 0741 277 938 may include your name, phone number and the content you choose to share.</li></ul>
+    <ul><li>This website does not store form submissions. When you use the prayer form, your message opens in WhatsApp and is sent only when you press send.</li><li>Messages sent to 0741 277 938 may include your name, phone number and the content you choose to share.</li></ul>
     <h3>How we use it</h3>
     <ul><li>To respond to your enquiry, pray for you or arrange counselling.</li><li>Prayer requests are seen only by Pastor Rop and the prayer team and are never published.</li><li>Testimonies are shared publicly only with your permission, using first name and town.</li></ul>
     <h3>Third-party services</h3>
-    <p>Embedded YouTube videos and Google Maps may set cookies when you play a video or view the map. Their own privacy policies apply. Videos load only when you press play.</p>
+    <p>Embedded YouTube videos may set cookies when you press play. Their own privacy policies apply. Videos load only when you press play.</p>
     <h3>Your choices</h3>
-    <p>You may stay anonymous, or ask us to delete your messages or remove a photo or testimony at any time by calling or messaging 0741 277 938.</p>
+    <p>You may ask us to delete your messages or remove a photo or testimony at any time by calling or messaging 0741 277 938.</p>
   </div>
 </dialog>
 <dialog id="terms" aria-labelledby="terms-h">
@@ -836,12 +776,6 @@ html:not(.js) [data-reveal]{opacity:1;transform:none}
   </div>
 </dialog>
 
-<div class="mcta" id="mcta">
-  <a class="btn btn-gold" href="#contact" data-topic="Plan a visit" data-track="mcta_visit">Plan your visit</a>
-  <a class="btn btn-outline" href="tel:+254741277938" aria-label="Call the church"><svg class="i"><use href="#i-phone"/></svg></a>
-</div>
-<a class="wa" href="https://wa.me/254741277938" target="_blank" rel="noopener" aria-label="Chat with the church on WhatsApp" data-track="wa_float"><svg class="i"><use href="#i-whatsapp"/></svg></a>
-<button class="totop" id="totop" type="button" aria-label="Back to top"><svg class="i"><use href="#i-up"/></svg></button>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
@@ -875,71 +809,75 @@ const f=(d,o)=>d.toLocaleDateString('en-GB',o);
 const range=e=>e.start===e.end?f(D(e.start),{weekday:'short',day:'numeric',month:'short'}):`${f(D(e.start),{day:'numeric',month:'short'})} – ${f(D(e.end),{day:'numeric',month:'short'})}`;
 const st=e=>TODAY<D(e.start)?'soon':TODAY>D(e.end)?'past':'now';
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const svg=n=>`<svg class="i" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+const svg=(n,c='i')=>`<svg class="${c}" aria-hidden="true"><use href="#i-${n}"/></svg>`;
 const wa=t=>'https://wa.me/254741277938?text='+encodeURIComponent(t);
+const nextSunday=()=>{const ns=new Date(TODAY);ns.setDate(ns.getDate()+(7-ns.getDay())%7);return ns};
 function track(n,x){try{(window.dataLayer=window.dataLayer||[]).push(Object.assign({event:n},x||{}));window.gtag&&gtag('event',n,x||{})}catch(e){}}
 
 /* ---------- Render dynamic content ---------- */
 (function render(){
-  const ns=new Date(TODAY);ns.setDate(ns.getDate()+(7-ns.getDay())%7);
-  $$('[data-next-sunday]').forEach(el=>el.textContent=(TODAY.getDay()===0?'Today':f(ns,{weekday:'short',day:'numeric',month:'short'}))+' · 8:00 AM');
+  const ns=nextSunday();
+  const label=f(ns,{weekday:'short',day:'numeric',month:'short'});
+  $$('[data-next-sunday]').forEach(el=>el.textContent=TODAY.getDay()===0?'Today · 8:00 AM':'Next: '+label);
   const live=EVENTS.filter(e=>st(e)!=='past').sort((a,b)=>D(a.start)-D(b.start));
   const ev=live[0];
+  const photo='<span class="frame"><img src="images/worship.jpg" width="536" height="536" alt="Worshippers lifting their hands in prayer" decoding="async"></span>';
   if(ev){
     const now=st(ev)==='now';
-    $('#upcoming').innerHTML=`<div class="art"><img data-copy="worship" alt=""><span class="tagline">${now?'<span class="live-dot"></span>Happening now':svg('calendar').replace('class="i"','class="i i-sm"')+'Coming up'}</span></div>
+    $('#upcoming').innerHTML=`<span class="tag">${now?'<span class="live-dot"></span>Happening now':svg('calendar')+'Coming up'}</span>
+     <div class="art">${photo}</div>
      <div class="body"><h3>${esc(ev.title)}</h3><p>${esc(ev.desc)}</p>
      <ul class="meta"><li>${svg('calendar')}<span>${range(ev)}</span></li><li>${svg('clock')}<span>${esc(ev.time)}</span></li><li>${svg('pin')}<span>New Life Church, opp. Koiwa Road, Litein</span></li></ul>
-     <div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-gold" href="#contact" data-topic="Plan a visit">Plan to attend ${svg('arrow').replace('class="i"','class="i i-arrow"')}</a><a class="btn btn-light" href="${wa('Hello, I would like to ask about '+ev.title+'.')}" target="_blank" rel="noopener">Ask a question</a></div></div>`;
+     <div class="acts"><a class="btn btn-gold btn-sm" href="#prayer" data-topic="Plan a visit">Plan to attend ${svg('arrow')}</a><a class="btn btn-glass btn-sm" href="${wa('Hello, I would like to ask about '+ev.title+'.')}" target="_blank" rel="noopener">Ask a question</a></div></div>`;
   } else {
-    $('#upcoming').innerHTML=`<div class="art"><img data-copy="worship" alt=""><span class="tagline">${svg('calendar').replace('class="i"','class="i i-sm"')}This Sunday</span></div>
+    $('#upcoming').innerHTML=`<span class="tag">${svg('calendar')}This Sunday</span>
+     <div class="art">${photo}</div>
      <div class="body"><h3>Sunday Worship Service</h3><p>Join us for praise, the Word and prayer. Dates for the next special programme will be announced soon.</p>
-     <ul class="meta"><li>${svg('calendar')}<span>${f(ns,{weekday:'long',day:'numeric',month:'long'})}</span></li><li>${svg('clock')}<span>8:00 AM – 12:30 PM</span></li></ul>
-     <a class="btn btn-gold" href="#contact" data-topic="Plan a visit">Plan your visit</a></div>`;
+     <div class="chips"><span class="chip">${svg('calendar')}${esc(f(ns,{weekday:'long',day:'numeric',month:'long'}))}</span><span class="chip">${svg('clock')}8:00 AM – 12:30 PM</span></div>
+     <a class="btn btn-gold btn-block" href="#about" data-track="expect_sunday">What to expect on Sunday ${svg('arrow')}</a></div>`;
   }
-  const w=$('.mosaic .m3 img');const up=$('#upcoming .art img');up.src=w.currentSrc||w.src;up.srcset=w.srcset||'';up.sizes='(min-width:900px) 45vw, 100vw';
   const nextFor=k=>{const e=EVENTS.filter(x=>x.service===k&&st(x)!=='past').sort((a,b)=>D(a.start)-D(b.start))[0];return e?(st(e)==='now'?'Now · ':'Next: ')+range(e):null};
-  $('#svcCards').innerHTML=SERVICES.map((s,i)=>{const n=nextFor(s.key);return `<article class="card" data-reveal data-d="${i%3}">
-    <span class="ic-box ${i===0?'navy':''}">${svg(s.icon)}</span><h3>${esc(s.name)}</h3><p>${esc(s.text)}</p>
+  $('#svcCards').innerHTML=SERVICES.map((s,i)=>{const n=nextFor(s.key);return `<article class="svc" data-reveal data-d="${i%3}">
+    <span class="ic ${i===0?'':'gold'}">${svg(s.icon)}</span><h3>${esc(s.name)}</h3><p>${esc(s.text)}</p>
     <div class="when"><div>${svg('calendar')}<span><strong>${esc(s.when)}</strong>${n?' · '+n:(['communion','above'].includes(s.key)?' · Dates announced on Sunday':'')}</span></div><div>${svg('clock')}<span>${esc(s.time)}</span></div></div>
-    <a class="link" href="#contact" data-topic="${s.cta||'Plan a visit'}">${s.cta?'Book a session':'Ask about this'} ${svg('arrow').replace('class="i"','class="i i-sm"')}</a></article>`}).join('');
+    ${s.cta?`<a class="link" href="#prayer" data-topic="${esc(s.cta)}">Book a session ${svg('arrow','i i-sm')}</a>`:''}</article>`}).join('');
   $('#quotes').innerHTML=TESTIMONIES.map((t,i)=>`<figure class="quote" data-reveal data-d="${i}"><span class="sample">Sample — replace with an approved testimony</span>
-    <svg class="i qi" aria-hidden="true"><use href="#i-quote"/></svg><blockquote><p>${esc(t.q)}</p></blockquote>
+    ${svg('quote','i qi')}<blockquote><p>${esc(t.q)}</p></blockquote>
     <figcaption><footer><span class="avatar" aria-hidden="true">${esc(t.name.charAt(0))}</span><span><b>${esc(t.name)}</b>${esc(t.place)} · ${esc(t.ctx)}</span></footer></figcaption></figure>`).join('');
   $('#year').textContent=new Date().getFullYear();
 })();
 
-/* ---------- Scrollcraft-style act engine (transform/opacity/clip-path only) ---------- */
-const acts=$$('[data-sc="act"]');
-function scrub(){
-  const vh=innerHeight;
-  acts.forEach(a=>{
-    const r=a.getBoundingClientRect();const total=a.offsetHeight-vh;
-    const p=Math.min(1,Math.max(0,-r.top/Math.max(1,total)));
-    a.style.setProperty('--sc-p',Math.min(1,p*1.6).toFixed(3));
-    const lines=a.querySelectorAll('.line');
-    lines.forEach((l,i)=>{const s=.12+i*.2;l.style.setProperty('--o',Math.min(1,Math.max(0,(p-s)/.14)).toFixed(3))});
-    a.querySelector('.verse').style.setProperty('--o4',Math.min(1,Math.max(0,(p-.74)/.12)).toFixed(3));
-  });
-}
+/* ---------- Add to calendar (next Sunday, 8:00–12:30 EAT = 05:00–09:30 UTC) ---------- */
+$('#addCal').addEventListener('click',()=>{
+  const ns=nextSunday(),p=n=>String(n).padStart(2,'0');
+  const day=`${ns.getFullYear()}${p(ns.getMonth()+1)}${p(ns.getDate())}`;
+  const stamp=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
+  const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//New Life Church Litein//EN','BEGIN:VEVENT',
+    `UID:sunday-${day}@newlife-litein.pages.dev`,`DTSTAMP:${stamp}`,`DTSTART:${day}T050000Z`,`DTEND:${day}T093000Z`,
+    'SUMMARY:Sunday Worship · New Life Church Litein','LOCATION:Opp. Koiwa Road junction, near Litein Shopping Centre, Litein',
+    'DESCRIPTION:Sunday worship 8:00 AM – 12:30 PM. Everyone is welcome.','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));
+  a.download='new-life-sunday-worship.ics';
+  document.body.appendChild(a);a.click();a.remove();
+  track('add_to_calendar');
+});
 
-/* ---------- Scroll UI: progress, nav shadow, back-to-top, active link ---------- */
-const prog=$('#progress'),nav=$('#nav'),toTop=$('#totop');
+/* ---------- Scroll UI: nav shadow, active tab ---------- */
+const nav=$('#nav');
+const tabIds=['top','visit','watch','give','prayer'];
 const sections=$$('main section[id]');
 let ticking=false;
 function onScroll(){
-  const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
-  prog.style.transform=`scaleX(${h>0?y/h:0})`;
+  const y=scrollY;
   nav.classList.toggle('scrolled',y>8);
-  toTop.classList.toggle('show',y>innerHeight*1.2);
   let cur='';sections.forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.35)cur=s.id});
   $$('.menu a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+cur?'true':'false'));
-  if(!RM)scrub();
+  $$('[data-tab-link]').forEach(a=>a.setAttribute('aria-current',a.dataset.tabLink===cur?'true':'false'));
   ticking=false;
 }
 addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
 addEventListener('resize',onScroll);onScroll();
-toTop.addEventListener('click',()=>{scrollTo({top:0,behavior:RM?'auto':'smooth'});$('.brand').focus({preventScroll:true})});
 
 /* ---------- Reveal on scroll ---------- */
 if('IntersectionObserver' in window&&!RM){
@@ -954,10 +892,13 @@ burger.addEventListener('click',()=>setMenu(!drawer.classList.contains('open')))
 drawer.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
 addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.contains('open')){setMenu(false);burger.focus()}});
 
-/* ---------- Pre-select form topic from CTAs, tracking ---------- */
+/* ---------- Topic preset from CTAs, tracking, dialogs ---------- */
 document.addEventListener('click',e=>{
   const a=e.target.closest('a,button');if(!a)return;
-  if(a.dataset.topic){const t=$('#topic');[...t.options].forEach(o=>{if(o.text.startsWith(a.dataset.topic.split(' ')[0]))t.value=o.text});topicChange();setTimeout(()=>$('#name').focus({preventScroll:true}),RM?0:650)}
+  if(a.dataset.topic&&a.closest('#prayer')===null){
+    $('#topic').value=a.dataset.topic;
+    setTimeout(()=>$('#msg').focus({preventScroll:true}),RM?0:700);
+  }
   if(a.dataset.track)track(a.dataset.track);
   const h=a.getAttribute('href')||'';if(h.startsWith('tel:'))track('call_click');else if(h.includes('wa.me'))track('whatsapp_click');else if(h.includes('/maps/dir'))track('directions_click');
   if(a.dataset.dialog){const d=document.getElementById(a.dataset.dialog);d.showModal();d.querySelector('[data-close]').focus()}
@@ -968,25 +909,28 @@ $$('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d)d.close()
 /* ---------- Video: load on demand ---------- */
 $$('.video').forEach(v=>v.querySelector('button').addEventListener('click',()=>{
   track('video_play');
-  v.innerHTML=`<iframe src="${v.dataset.src}&autoplay=1" title="Latest sermons from Pastor Rop on YouTube" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+  v.innerHTML=`<iframe src="${v.dataset.src}&autoplay=1" title="Latest sermons from Pastor Rop on YouTube" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe>`;
   v.querySelector('iframe').focus();
+}));
+
+/* ---------- Give tabs ---------- */
+$$('.seg button[data-tab]').forEach(b=>b.addEventListener('click',()=>{
+  $$('.seg button[data-tab]').forEach(x=>x.setAttribute('aria-selected',x===b?'true':'false'));
+  $$('[data-panel]').forEach(p=>p.hidden=p.dataset.panel!==b.dataset.tab);
 }));
 
 /* ---------- Copy till ---------- */
 function toast(m,ok=true){const t=$('#toast');t.innerHTML=svg(ok?'check':'alert')+esc(m);t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),2200)}
 $('#copyTill').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('6887385');toast('Till number 6887385 copied');track('copy_till')}catch(e){toast('Till number: 6887385')}});
 
-/* ---------- Contact form: validation, loading, success, error ---------- */
+/* ---------- Prayer form: validation, WhatsApp hand-off ---------- */
 const form=$('#form');
-function topicChange(){const t=$('#topic').value==='Share a testimony';$('#consentWrap').hidden=!t;$('#msg').placeholder=t?'Tell us what God has done':'A few words are enough'}
-$('#topic').addEventListener('change',topicChange);
-$('#anon').addEventListener('change',()=>{const a=$('#anon').checked;['name','phone'].forEach(id=>{$('#'+id).disabled=a;if(a){$('#f-'+id).removeAttribute('data-invalid');$('#'+id).removeAttribute('aria-invalid')}})});
 function setErr(id,bad){const f=$('#f-'+id),i=$('#'+id);if(bad){f.setAttribute('data-invalid','');i.setAttribute('aria-invalid','true')}else{f.removeAttribute('data-invalid');i.removeAttribute('aria-invalid')}return bad}
-['name','phone','msg'].forEach(id=>$('#'+id).addEventListener('input',()=>{if($('#f-'+id).hasAttribute('data-invalid'))validate(id)}));
+['phone','msg'].forEach(id=>$('#'+id).addEventListener('input',()=>{if($('#f-'+id).hasAttribute('data-invalid'))validate(id)}));
 function validate(only){
-  const anon=$('#anon').checked,res={};
-  res.name=!anon&&$('#name').value.trim().length<2;
-  const ph=$('#phone').value.replace(/[\s-]/g,'');res.phone=!anon&&ph!==''&&!/^(\+?254|0)?[17]\d{8}$/.test(ph);
+  const res={};
+  const ph=$('#phone').value.replace(/[\s-]/g,'');
+  res.phone=ph!==''&&!/^(\+?254|0)?[17]\d{8}$/.test(ph);
   res.msg=$('#msg').value.trim().length<5;
   if(only)return setErr(only,res[only]);
   Object.entries(res).forEach(([k,v])=>setErr(k,v));
@@ -997,48 +941,24 @@ form.addEventListener('submit',e=>{
   const bad=validate();
   if(bad.length){$('#'+bad[0]).focus();s.className='status bad';s.innerHTML=svg('alert')+'<span>Please check the highlighted field'+(bad.length>1?'s':'')+'.</span>';return}
   const btn=$('#submit');btn.setAttribute('aria-busy','true');$('#submitText').textContent='Preparing your message…';
-  const anon=$('#anon').checked,topic=$('#topic').value;
-  const lines=[topic.toUpperCase(),'From: '+(anon?'Anonymous':$('#name').value.trim())];
-  if(!anon&&$('#phone').value.trim())lines.push('Phone: '+$('#phone').value.trim());
-  if(topic==='Share a testimony')lines.push('Permission to share: '+($('#consent').checked?'Yes (first name & town)':'No'));
-  lines.push('',$('#msg').value.trim());
+  const name=$('#name').value.trim(),phone=$('#phone').value.trim(),msg=$('#msg').value.trim();
+  const topic=$('#topic').value||'Prayer request';
+  const lines=[topic.toUpperCase(),'From: '+(name||'Not given')];
+  if(phone)lines.push('Phone: '+phone);
+  if($('#private').checked)lines.push('Pastors only — please do not mention my name in church.');
+  lines.push('',msg);
   const url=wa(lines.join('\n'));
   const w=window.open('about:blank','_blank');
   setTimeout(()=>{
-    btn.removeAttribute('aria-busy');$('#submitText').textContent='Send via WhatsApp';
-    if(w){w.location.href=url;s.className='status ok';s.innerHTML=svg('check')+'<span><b>Thank you — your message is ready.</b> WhatsApp has opened with it; tap send and our team will respond. Prayer requests are prayed over by our team.</span>';track('form_submit',{topic});form.reset();topicChange();$('#name').disabled=$('#phone').disabled=false}
+    btn.removeAttribute('aria-busy');$('#submitText').textContent='Send prayer request';
+    if(w){w.location.href=url;s.className='status ok';s.innerHTML=svg('check')+'<span><b>Thank you — your message is ready.</b> WhatsApp has opened with it; tap send and our team will respond. Prayer requests are prayed over by our team.</span>';track('form_submit',{topic});form.reset();$('#topic').value='Prayer request';$('#private').checked=true}
     else{s.className='status bad';s.innerHTML=svg('alert')+`<span>We couldn't open WhatsApp — your browser may have blocked it. <a href="${url}" target="_blank" rel="noopener">Open WhatsApp</a> or call <a href="tel:+254741277938">0741 277 938</a>.</span>`}
-    s.focus&&s.setAttribute('tabindex','-1');s.focus();
+    s.setAttribute('tabindex','-1');s.focus();
   },650);
 });
-</script>
-<script>
-/* Enhancements: honeypot, click-to-load map, sticky mobile CTA */
-(function(){
-  // Honeypot — if the hidden field is filled, it's a bot: block submission silently.
-  var form=document.getElementById('form');
-  if(form){form.addEventListener('submit',function(e){
-    var hp=document.getElementById('company');
-    if(hp&&hp.value){e.preventDefault();e.stopImmediatePropagation();}
-  },true);}
 
-  // Click-to-load Google Map (no third-party cookies until the visitor asks).
-  var mapLoad=document.getElementById('mapLoad'),map=document.getElementById('map');
-  if(mapLoad&&map){mapLoad.addEventListener('click',function(){
-    var f=document.createElement('iframe');
-    f.title='Map: New Life Church, opposite Koiwa Road junction, Litein';
-    f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';
-    f.src=map.getAttribute('data-map');
-    map.innerHTML='';map.appendChild(f);
-  });}
-
-  // Sticky mobile CTA — reveal after the hero scrolls away.
-  var mcta=document.getElementById('mcta'),hero=document.getElementById('top');
-  if(mcta&&hero){var onScroll=function(){
-    var past=(window.scrollY||0) > (hero.offsetHeight-160);
-    mcta.classList.toggle('show',past);
-  };window.addEventListener('scroll',onScroll,{passive:true});onScroll();}
-})();
+/* Honeypot — if the hidden field is filled, it's a bot: block submission silently. */
+form.addEventListener('submit',e=>{const hp=$('#company');if(hp&&hp.value){e.preventDefault();e.stopImmediatePropagation()}},true);
 </script>
 </body>
 </html>
