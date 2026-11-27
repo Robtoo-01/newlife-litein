@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://newlife-litein.pages.dev/</loc>
-    <lastmod>2026-11-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://newlife-litein.pages.dev/about</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/accessibility</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/connect</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/contact</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/events</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/give</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/ministries</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/privacy</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/terms</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/visit</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://newlife-litein.pages.dev/watch</loc><lastmod>2026-11-27</lastmod></url>
 </urlset>

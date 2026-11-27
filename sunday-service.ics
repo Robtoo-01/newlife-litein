@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//New Life Church Litein//Sunday Worship//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:sunday-worship@newlife-litein.pages.dev
+DTSTAMP:20261127T000000Z
+DTSTART;TZID=Africa/Nairobi:20261129T090000
+DTEND;TZID=Africa/Nairobi:20261129T130000
+RRULE:FREQ=WEEKLY;BYDAY=SU
+SUMMARY:Sunday Worship · New Life Church Litein
+LOCATION:New Life Church\, opposite Koiwa Road junction\, near Litein Shopping Centre\, Litein
+DESCRIPTION:Praise\, the Word and prayer. English & Kiswahili. Everyone is welcome. Call/WhatsApp 0741 277 938.
+URL:https://newlife-litein.pages.dev/visit
+END:VEVENT
+END:VCALENDAR
