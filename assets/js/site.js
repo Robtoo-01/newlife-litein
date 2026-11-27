@@ -120,5 +120,8 @@
     filter.addEventListener('input', run); run();
   }
 
+  // time-limited sections (e.g. an invitation) disappear the day after they end
+  $$('[data-expires]').forEach(el => { if (new Date(el.dataset.expires + 'T23:59:59') < new Date()) el.hidden = true; });
+
   $$('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 })();
