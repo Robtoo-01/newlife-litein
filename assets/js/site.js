@@ -118,6 +118,7 @@
       count.textContent = `${n} of ${items.length} messages`;
     };
     filter.addEventListener('input', run); run();
+    filter.addEventListener('submit', e => e.preventDefault()); // Enter in the search box just filters
   }
 
   // time-limited sections (e.g. an invitation) disappear the day after they end
